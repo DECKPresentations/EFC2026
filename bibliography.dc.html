@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Bibliography — The Education Futures Council</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+</style>
+</helmet>
+<div data-screen-label="Bibliography" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
+  <dc-import name="SiteHeader" theme="light" hint-size="100%,63px"></dc-import>
+
+  <section style="padding:64px clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
+    <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:800px;">
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">Sources</span>
+        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(36px,4vw,52px); line-height:1.05; letter-spacing:-0.3px;">Bibliography</h1>
+        <p style="margin:0; font-size:18px; line-height:1.5; color:#475569; text-wrap:pretty;">Research, policy analyses, and state resources referenced in Ours to Solve, Once and for All and SEA Change.</p>
+      </div>
+      <ol style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;">
+        <sc-for list="{{ entries }}" as="e" hint-placeholder-count="6">
+          <li><a href="{{ e.href }}" style="display:flex; align-items:center; gap:20px; padding:24px; border-radius:6px; background:#fff; box-shadow:inset 0 0 0 1px #CBD5E1;" style-hover="box-shadow:inset 0 0 0 1px #93C5FD">
+            <span style="flex-shrink:0; width:60px; height:60px; border-radius:6px; background:#F1F5F9; display:flex; align-items:center; justify-content:center; font-family:'Bree Serif', serif; font-size:18px; color:#1E3A5F;">{{ e.num }}</span>
+            <span style="display:flex; flex-direction:column; gap:6px; min-width:0; flex:1;">
+              <span style="font-weight:700; font-size:17px; line-height:1.3; text-wrap:pretty;">{{ e.title }}</span>
+              <span style="font-weight:600; font-size:13px; color:#1E3A5F;">{{ e.author }}</span>
+              <span style="font-size:14px; line-height:1.5; color:#475569; text-wrap:pretty;">{{ e.desc }}</span>
+            </span>
+            <span style="flex-shrink:0; width:36px; height:36px; border-radius:4px; background:#F1F5F9; display:flex; align-items:center; justify-content:center;"><img src="assets/icon-download.svg" alt="Open" style="width:12px; height:12px;"></span>
+          </a></li>
+        </sc-for>
+      </ol>
+      <p style="margin:0; font-size:13px; color:#94A3B8;">Entries are placeholders until the final bibliography is supplied.</p>
+    </div>
+  </section>
+
+  <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      entries: [
+        { num: 'I.', title: 'Ours to Solve, Once – and For All: Securing the Outcomes Our Students Need', author: 'The Education Futures Council, Hoover Institution', desc: 'The full report and its recommendations for a new K–12 operating system. Published October 2024.', href: 'https://www.hoover.org/sites/default/files/2024-10/EFC_OursToSolve_Web_101824.pdf' },
+        { num: 'II.', title: 'The Human Authority Needed For Good Schools', author: 'Hoover Institution Research', desc: 'The litmus test for a good school is its culture—its caring, energy, mutual trust, and commitment to a common mission.', href: 'https://www.hoover.org/research/human-authority-needed-good-schools' },
+        { num: 'III.', title: 'Making Student Achievement The North Star of Our Education System', author: 'Hoover Institution Research', desc: 'The public education system insufficiently incentivizes its leaders to prioritize student academic achievement.', href: 'https://www.hoover.org/research/making-student-achievement-north-star-our-education-system' },
+        { num: 'IV.', title: 'School Turnaround Strategies: A Literature Review on Effective Practices and Barriers', author: 'Hoover Institution Research', desc: 'Two decades of school turnaround efforts, evaluating the effectiveness of various strategies.', href: 'https://www.hoover.org/research/school-turnaround-strategies-literature-review-effective-practices-and-barriers' },
+        { num: 'V.', title: 'Understanding The Promise And Reality Of Continuous Improvement in US Public Schools', author: 'Hoover Institution Research', desc: 'Continuous improvement as an approach for driving organizational change across a variety of sectors.', href: 'https://www.hoover.org/research/understanding-promise-and-reality-continuous-improvement-us-public-schools' },
+        { num: 'VI.', title: 'Environmental Incentives vs. Environmental Mandates: Lessons for Educational Policy', author: 'Hoover Institution Research', desc: 'A key insight from economics is that incentives matter.', href: 'https://www.hoover.org/research/environmental-incentives-vs-environmental-mandates-lessons-educational-policy' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
