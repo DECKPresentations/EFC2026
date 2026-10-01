@@ -1,0 +1,18 @@
+window.__resources = {
+  el_building: 'sea-portrait/img/el_building.webp',
+  el_organize: 'sea-portrait/img/el_organize.webp',
+  el_flip: 'sea-portrait/img/el_flip.webp',
+  el_professionalism: 'sea-portrait/img/el_professionalism.webp',
+  el_safe: 'sea-portrait/img/el_safe.webp',
+  el_operations: 'sea-portrait/img/el_operations.webp',
+  el_vision: 'sea-portrait/img/el_vision.webp',
+  elf_organize: 'sea-portrait/img/elf_organize.webp',
+  elf_flip: 'sea-portrait/img/elf_flip.webp',
+  elf_professionalism: 'sea-portrait/img/elf_professionalism.webp',
+  elf_safe: 'sea-portrait/img/elf_safe.webp',
+  elf_operations: 'sea-portrait/img/elf_operations.webp',
+  elf_vision: 'sea-portrait/img/elf_vision.webp',
+  synth1: 'sea-portrait/img/synth1.jpg',
+  synth3: 'sea-portrait/img/synth3.jpg',
+  ribbonBg: 'assets/sea-scene.webp',
+};

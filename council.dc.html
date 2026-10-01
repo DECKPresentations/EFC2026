@@ -9,31 +9,29 @@
 <x-dc>
 <helmet>
 <title>The Council — The Education Futures Council</title>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#fff}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:inherit;text-decoration:none}
 a:hover{color:inherit}
 </style>
 </helmet>
 <div data-screen-label="The Council" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
-  <dc-import name="SiteHeader" theme="light" hint-size="100%,63px"></dc-import>
-
-  <section style="padding:64px clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
+  <dc-import name="SiteHeader" theme="dark" hint-size="100%,63px"></dc-import>
+  <main id="main"><section style="background:linear-gradient(rgba(12,24,50,0.92),rgba(12,24,50,0.92)), url(assets/report-bg.jpg) center / cover no-repeat; color:#fff; padding:clamp(110px,12vw,150px) clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
     <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
-      <div style="display:flex; flex-direction:column; gap:12px;">
-        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">The National Vision</span>
-        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(36px,4vw,52px); line-height:1.05; letter-spacing:-0.3px;">The Council</h1>
-        <p style="margin:0; font-size:18px; line-height:1.5; color:#475569; text-wrap:pretty;">A letter from the members of the Education Futures Council</p>
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:760px;">
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#93C5FD;">The National Vision</span>
+        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1; letter-spacing:-0.3px;">The Council</h1>
+        <p style="margin:0; font-size:17px; line-height:1.6; text-wrap:pretty;">A letter from the members of the Education Futures Council</p>
       </div>
-
-      <article style="border-radius:6px; box-shadow:inset 0 0 0 1px #CBD5E1; padding:clamp(24px,4vw,48px); display:flex; flex-direction:column; gap:20px; max-width:960px;">
-        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#94A3B8;">October 2024</span>
-        <p style="margin:0; font-size:16px; line-height:1.7; text-wrap:pretty;">In the fall of 2023, the Hoover Institution formed the Education Futures Council to review and analyze the state of public education in America. We on the Council recognize that the future of our country—its security, prosperity, and social cohesion—rests on the certainty of providing every child with access to a high-quality education. The Council is diverse by design; we reflect a wide range of personal and professional life experiences that span the political spectrum. Supported by a team of policy experts and researchers, we have developed a new approach on how the public education system can be revitalized to address its most pressing challenges. This report is the culmination of our work.</p>
+      <article style="border-radius:6px; background:#fff; color:#0F172A; padding:clamp(24px,4vw,48px); display:flex; flex-direction:column; gap:20px; max-width:960px;">
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#475569;">October 2024</span>
+        <p style="margin:0; font-size:15px; line-height:1.7; text-wrap:pretty;">In the fall of 2023, the Hoover Institution formed the Education Futures Council to review and analyze the state of public education in America. We on the Council recognize that the future of our country—its security, prosperity, and social cohesion—rests on the certainty of providing every child with access to a high-quality education. The Council is diverse by design; we reflect a wide range of personal and professional life experiences that span the political spectrum. Supported by a team of policy experts and researchers, we have developed a new approach on how the public education system can be revitalized to address its most pressing challenges. This report is the culmination of our work.</p>
         <sc-if value="{{ expanded }}" hint-placeholder-val="{{ false }}">
-          <p style="margin:0; font-size:16px; line-height:1.7; text-wrap:pretty;">We have identified fundamental barriers within the current K-12 public education system that prevent far too many students from succeeding and thriving. Our "True North" must always point toward student outcomes. Despite a national commitment to the issue, steep increases in funding, and decades of reform efforts, our current system has been unable to reverse poor student outcomes, particularly for low income students and students of color. This failure goes against who we profess to be as a nation.</p>
-          <p style="margin:0; font-size:16px; line-height:1.7; text-wrap:pretty;">We aim to make far better use of the considerable talent, assets, and efforts that exist in our public school institutions. In offering solutions, our report calls for a new approach that focuses on organizing for student-based results—flipping the system from top down to bottom-up—minimizing mandates while embracing incentives, and cultivating and rewarding professional mastery in the education workforce. Each component of the proposed new operating system is deliberately influenced by the other components, and the plan is designed to be executed as a whole.</p>
-          <p style="margin:0; font-size:16px; line-height:1.7; text-wrap:pretty;">On behalf of the Education Futures Council, we hope this report builds motivation and commitment for change. Together we can launch a new approach to address the current state of public education in America and provide every child with the foundational opportunities they deserve.</p>
+          <p style="margin:0; font-size:15px; line-height:1.7; text-wrap:pretty;">We have identified fundamental barriers within the current K-12 public education system that prevent far too many students from succeeding and thriving. Our "True North" must always point toward student outcomes. Despite a national commitment to the issue, steep increases in funding, and decades of reform efforts, our current system has been unable to reverse poor student outcomes, particularly for low income students and students of color. This failure goes against who we profess to be as a nation.</p>
+          <p style="margin:0; font-size:15px; line-height:1.7; text-wrap:pretty;">We aim to make far better use of the considerable talent, assets, and efforts that exist in our public school institutions. In offering solutions, our report calls for a new approach that focuses on organizing for student-based results—flipping the system from top down to bottom-up—minimizing mandates while embracing incentives, and cultivating and rewarding professional mastery in the education workforce. Each component of the proposed new operating system is deliberately influenced by the other components, and the plan is designed to be executed as a whole.</p>
+          <p style="margin:0; font-size:15px; line-height:1.7; text-wrap:pretty;">On behalf of the Education Futures Council, we hope this report builds motivation and commitment for change. Together we can launch a new approach to address the current state of public education in America and provide every child with the foundational opportunities they deserve.</p>
         </sc-if>
         <button onClick="{{ toggle }}" style="align-self:flex-start; border:0; background:transparent; padding:0; font-family:inherit; font-weight:600; font-size:14px; color:#1E3A5F; text-decoration:underline; cursor:pointer;">{{ toggleLabel }}</button>
         <div style="border-top:1px solid #E2E8F0; padding-top:20px; display:flex; flex-direction:column; gap:4px;">
@@ -41,9 +39,13 @@ a:hover{color:inherit}
           <span style="font-size:15px; color:#475569;">The members of the Education Futures Council</span>
         </div>
       </article>
+    </div>
+  </section>
 
-      <div style="display:flex; flex-direction:column; gap:24px; padding-top:16px;">
-        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(28px,3vw,36px); line-height:1.1;">Council Members</h2>
+  <section style="padding:64px clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
+    <div style="max-width:1312px; margin:0 auto;">
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1;">Council Members</h2>
         <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap:20px;">
           <sc-for list="{{ members }}" as="m" hint-placeholder-count="6">
             <div style="border-radius:6px; box-shadow:inset 0 0 0 1px #CBD5E1; padding:28px 20px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px;">
@@ -57,7 +59,7 @@ a:hover{color:inherit}
         </div>
       </div>
     </div>
-  </section>
+  </section></main>
 
   <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
 </div>

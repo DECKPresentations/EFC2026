@@ -9,112 +9,43 @@
 <x-dc>
 <helmet>
 <title>SEA Change Blueprint Tool — The Education Futures Council</title>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sea-portrait/sea-portrait.css">
+<script src="sea-portrait/resources.js"></script>
+<script src="sea-portrait/data/5e171ed4.js"></script>
+<script src="sea-portrait/data/3a7e1da5.js"></script>
+<script src="sea-portrait/data/8941b15c.js"></script>
+<script src="sea-portrait/data/34775654.js"></script>
+<script src="sea-portrait/data/216c6da9.js"></script>
+<script src="sea-portrait/data/7b00249b.js"></script>
 <style>
-body{margin:0;background:#fff}
+body{margin:0;background:#071932;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:inherit;text-decoration:none}
 a:hover{color:inherit}
 </style>
 </helmet>
-<div data-screen-label="SEA Change Tool" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
-  <dc-import name="SiteHeader" theme="light" hint-size="100%,63px"></dc-import>
+<div data-screen-label="SEA Change Tool" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative; background:url(assets/sea-scene.webp) center top / 100% auto no-repeat, #071932;">
+  <div style="position:relative;">
+  <dc-import name="SiteHeader" theme="dark" hint-size="100%,63px"></dc-import>
 
-  <section style="padding:64px clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
-    <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:24px;">
-        <div style="display:flex; flex-direction:column; gap:12px; max-width:760px;">
-          <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">State Tools</span>
-          <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(36px,4vw,52px); line-height:1.05; letter-spacing:-0.3px;">SEA Change Blueprint Tool</h1>
-          <p style="margin:0; font-size:18px; line-height:1.5; color:#475569; text-wrap:pretty;">An interactive view of how a future-ready State Education Agency organizes its work around the three core commitments. Select a commitment to explore its functions.</p>
-        </div>
-        <a href="state-tools.dc.html" style="display:inline-flex; align-items:center; gap:8px; height:44px; padding:0 20px; border-radius:37px; box-shadow:inset 0 0 0 1px #CBD5E1; font-weight:600; font-size:14px; color:#1E3A5F; white-space:nowrap;" style-hover="box-shadow:inset 0 0 0 1px #1E3A5F">← Back to Overview</a>
+  <main id="main"><section style="color:#fff; padding:clamp(110px,12vw,150px) clamp(20px,4.4vw,64px) 32px; box-sizing:border-box;">
+    <div style="max-width:1312px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:24px;">
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:760px;">
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#93C5FD;">A Blueprint for Future-Ready State Leadership</span>
+        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1; letter-spacing:-0.3px;">SEA Change Blueprint Tool</h1>
+        <p style="margin:0; font-size:17px; line-height:1.6; text-wrap:pretty;">Portrait of a State Education Agency: an interactive view of the attributes, competencies, and functions of a future-ready SEA.</p>
       </div>
-
-      <div style="border-radius:6px; background:#F1F5F9; box-shadow:inset 0 0 0 1px #CBD5E1; padding:clamp(24px,4vw,56px) clamp(16px,3vw,40px); display:flex; flex-direction:column; align-items:center; gap:0;">
-        <div style="display:inline-flex; align-items:center; gap:12px; padding:16px 24px; border-radius:6px; background:#1E3A5F; color:#fff; font-weight:700; font-size:16px;"><span style="width:40px; height:8px; border-radius:4px; background:#93C5FD;"></span>Student Learning and Long-Term Outcomes</div>
-        <div style="width:2px; height:48px; background:#93C5FD;"></div>
-        <div style="width:min(100%, 720px); height:2px; background:#93C5FD;"></div>
-        <div style="width:min(100%, 720px); display:grid; grid-template-columns:repeat(3, 1fr); gap:0;">
-          <div style="display:flex; justify-content:center;"><span style="width:2px; height:48px; background:#93C5FD;"></span></div>
-          <div style="display:flex; justify-content:center;"><span style="width:2px; height:48px; background:#93C5FD;"></span></div>
-          <div style="display:flex; justify-content:center;"><span style="width:2px; height:48px; background:#93C5FD;"></span></div>
-        </div>
-        <div style="width:100%; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap:16px;">
-          <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="3">
-            <button onClick="{{ n.select }}" style="{{ n.style }}" style-hover="box-shadow:inset 0 0 0 1px #1E3A5F">
-              <span style="font-weight:700; font-size:15px; color:#0F172A;">{{ n.title }}</span>
-              <span style="font-size:13px; color:{{ n.subColor }};">{{ n.sub }}</span>
-            </button>
-          </sc-for>
-        </div>
-        <span style="margin-top:32px; font-size:12px; color:#94A3B8; text-align:center;">The animated blueprint graphic from the original SEA page will be placed here.</span>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:24px;">
-        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(26px,2.8vw,36px); line-height:1.1;">{{ activeTitle }}</h2>
-        <div style="border-radius:6px; box-shadow:inset 0 0 0 1px #CBD5E1; overflow:hidden;">
-          <div style="display:grid; grid-template-columns:minmax(200px,1.2fr) minmax(0,1.5fr) minmax(0,1.2fr) auto; gap:16px; padding:18px 20px; background:#F1F5F9; font-weight:700; font-size:13px; color:#0F172A;">
-            <span>Function</span><span>What the agency does</span><span>Measure of success</span><span style="min-width:96px;">Status</span>
-          </div>
-          <sc-for list="{{ rows }}" as="r" hint-placeholder-count="4">
-            <div style="display:grid; grid-template-columns:minmax(200px,1.2fr) minmax(0,1.5fr) minmax(0,1.2fr) auto; gap:16px; padding:20px; border-top:1px solid #E2E8F0; font-size:14px; align-items:center;">
-              <span style="font-weight:700; color:#0F172A;">{{ r.key }}</span>
-              <span style="color:#475569; text-wrap:pretty;">{{ r.domain }}</span>
-              <span style="color:#475569; text-wrap:pretty;">{{ r.metric }}</span>
-              <span style="display:inline-flex; justify-content:center; align-items:center; min-width:96px; height:28px; padding:0 12px; border-radius:4px; background:#F1F5F9; font-weight:700; font-size:12px; color:#1E3A5F; white-space:nowrap;">{{ r.status }}</span>
-            </div>
-          </sc-for>
-        </div>
-        <p style="margin:0; font-size:13px; color:#94A3B8;">Table content is illustrative placeholder text pending final SEA Change tool data.</p>
-      </div>
+      <a href="state-tools.dc.html" style="display:inline-flex; align-items:center; gap:8px; height:44px; padding:0 24px; border-radius:37px; background:rgba(255,255,255,0.24); box-shadow:inset 0 0 0 0.5px #fff; font-weight:600; font-size:14px; color:#fff; white-space:nowrap;" style-hover="background:rgba(255,255,255,0.4)">← Back to Overview</a>
     </div>
   </section>
 
+  <section>
+    <x-import component-from-global-scope="SeaPortrait" from="./sea-portrait/SeaPortrait.jsx" hint-size="100%,900px"></x-import>
+  </section></main>
+
   <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
+  </div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { active: 1 };
-  renderVals() {
-    const nodes = [
-      { id: 0, title: 'Commitment 1', sub: 'Student outcomes at the center' },
-      { id: 1, title: 'Commitment 2', sub: 'Innovation and responsible AI' },
-      { id: 2, title: 'Commitment 3', sub: 'Local capacity and agency' },
-    ];
-    const rowsBy = [
-      [
-        { key: 'Strategic Vision', domain: 'Sets a statewide vision anchored in student learning and long-term outcomes', metric: 'Published multi-year outcome goals', status: 'In Place' },
-        { key: 'Accountability Design', domain: 'Aligns accountability to student results rather than compliance', metric: 'Outcome-weighted accountability system', status: 'Active' },
-        { key: 'Resource Allocation', domain: 'Directs funding toward evidence of student impact', metric: 'Share of funds tied to outcomes', status: 'Pending Review' },
-        { key: 'Public Reporting', domain: 'Reports progress transparently to families and communities', metric: 'Annual student outcome report', status: 'Draft Phase' },
-      ],
-      [
-        { key: 'Innovation Pipeline', domain: 'Establishes a process to test, evaluate, and scale new practices', metric: 'Number of validated pilots scaled', status: 'Active' },
-        { key: 'Responsible AI Policy', domain: 'Sets guardrails and guidance for AI-enabled improvement', metric: 'Adopted AI use policy', status: 'Completed' },
-        { key: 'Data Infrastructure', domain: 'Builds interoperable systems that make improvement measurable', metric: 'Statewide data standards adopted', status: 'Pending Review' },
-        { key: 'Improvement Cycles', domain: 'Makes continuous improvement expected practice across the agency', metric: 'Teams running improvement cycles', status: 'Draft Phase' },
-      ],
-      [
-        { key: 'Leadership Development', domain: 'Grows the capacity of district and school leaders', metric: 'Leaders completing development pathways', status: 'Active' },
-        { key: 'Educator Support', domain: 'Invests in professional mastery for educators', metric: 'Educators in mastery programs', status: 'In Place' },
-        { key: 'Community Partnership', domain: 'Engages families and communities as partners in decisions', metric: 'Community engagement index', status: 'Pending Review' },
-        { key: 'Local Flexibility', domain: 'Replaces rigid mandates with incentives and local agency', metric: 'Mandates converted to incentives', status: 'Draft Phase' },
-      ],
-    ];
-    const a = this.state.active;
-    return {
-      nodes: nodes.map(n => ({
-        ...n,
-        select: () => this.setState({ active: n.id }),
-        subColor: n.id === a ? '#1E3A5F' : '#475569',
-        style: `display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding:16px 20px; border:0; border-radius:6px; background:#fff; text-align:left; font-family:inherit; cursor:pointer; box-shadow:inset 0 0 0 ${n.id === a ? '2px #1E3A5F' : '1px #CBD5E1'};`,
-      })),
-      activeTitle: nodes[a].title + ': ' + nodes[a].sub,
-      rows: rowsBy[a],
-    };
-  }
-}
-</script>
 </body>
 </html>

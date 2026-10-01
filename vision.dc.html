@@ -9,41 +9,42 @@
 <x-dc>
 <helmet>
 <title>The National Vision — The Education Futures Council</title>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#fff}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:inherit;text-decoration:none}
 a:hover{color:inherit}
 </style>
 </helmet>
 <div data-screen-label="The National Vision" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
-  <dc-import name="SiteHeader" theme="light" hint-size="100%,63px"></dc-import>
-
-  <section style="padding:64px clamp(20px,4.4vw,64px); box-sizing:border-box;">
+  <dc-import name="SiteHeader" theme="dark" hint-size="100%,63px"></dc-import>
+  <main id="main"><section style="background:linear-gradient(rgba(12,24,50,0.92),rgba(12,24,50,0.92)), url(assets/report-bg.jpg) center / cover no-repeat; color:#fff; padding:clamp(110px,12vw,150px) clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
     <div style="max-width:1312px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap:48px 64px; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div style="aspect-ratio:16/9; border-radius:6px; overflow:hidden; background:#0F172A;">
-          <iframe src="https://www.youtube.com/embed/K26-C_FowAY" title="Ours to Solve, Once and for All" style="width:100%; height:100%; border:0; display:block;" allowfullscreen></iframe>
+          <iframe key="{{ activeId }}" src="{{ activeSrc }}" title="{{ activeTitle }}" style="width:100%; height:100%; border:0; display:block;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-          <a href="https://www.youtube.com/watch?v=K26-C_FowAY" style="display:flex; flex-direction:column; gap:10px;">
-            <span style="aspect-ratio:16/9; border-radius:6px; background:#1E3A5F; box-shadow:inset 0 0 0 1px #CBD5E1; display:flex; align-items:center; justify-content:center;"><span style="width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,0.29); box-shadow:inset 0 0 0 0.5px #fff; display:flex; align-items:center; justify-content:center;"><svg width="14" height="14" viewBox="0 0 18 18" fill="#fff"><path d="M4 2 L15 9 L4 16 Z"></path></svg></span></span>
-            <span style="font-size:14px; color:#475569;">Part 1: <strong style="color:#0F172A;">Overview</strong></span>
-          </a>
-          <a href="https://www.youtube.com/watch?v=K26-C_FowAY" style="display:flex; flex-direction:column; gap:10px;">
-            <span style="aspect-ratio:16/9; border-radius:6px; background:#1E3A5F; box-shadow:inset 0 0 0 1px #CBD5E1; display:flex; align-items:center; justify-content:center;"><span style="width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,0.29); box-shadow:inset 0 0 0 0.5px #fff; display:flex; align-items:center; justify-content:center;"><svg width="14" height="14" viewBox="0 0 18 18" fill="#fff"><path d="M4 2 L15 9 L4 16 Z"></path></svg></span></span>
-            <span style="font-size:14px; color:#475569;">Part 2: <strong style="color:#0F172A;">Theory of Action</strong></span>
-          </a>
+        <div role="tablist" aria-label="Report videos" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <sc-for list="{{ videos }}" as="v" hint-placeholder-count="2">
+            <button role="tab" aria-selected="{{ v.active }}" onClick="{{ v.select }}" style="display:flex; flex-direction:column; gap:10px; padding:0; border:0; background:transparent; text-align:left; font-family:inherit; cursor:pointer; color:#fff;">
+              <span style="position:relative; display:block; width:100%; aspect-ratio:16/9; border-radius:6px; overflow:hidden; background:#0F172A; box-shadow: {{ v.ring }};">
+                <img src="{{ v.thumb }}" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; opacity: {{ v.thumbOpacity }};">
+                <sc-if value="{{ v.inactive }}" hint-placeholder-val="{{ true }}"><span style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:40px; height:40px; border-radius:50%; background:rgba(15,23,42,0.6); box-shadow:inset 0 0 0 1px #fff; display:flex; align-items:center; justify-content:center;"><svg width="14" height="14" viewBox="0 0 18 18" fill="#fff" aria-hidden="true"><path d="M4 2 L15 9 L4 16 Z"></path></svg></span></sc-if>
+                <sc-if value="{{ v.active }}" hint-placeholder-val="{{ false }}"><span style="position:absolute; left:8px; top:8px; padding:4px 8px; border-radius:4px; background:#93C5FD; color:#1E3A5F; font-weight:700; font-size:10px; letter-spacing:1px; text-transform:uppercase;">Now playing</span></sc-if>
+              </span>
+              <span style="font-size:14px; color:#CBD5E1;">{{ v.part }} <strong style="color:#fff;">{{ v.title }}</strong></span>
+            </button>
+          </sc-for>
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:16px;">
-        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">National Strategic Framework</span>
-        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(34px,3.5vw,48px); line-height:1.05; letter-spacing:-0.3px;">Read the Full Report</h1>
-        <p style="margin:0; font-size:16px; line-height:1.65; color:#475569; text-wrap:pretty;">The Education Futures Council (EFC) has released its report, "Ours to Solve, Once – and For All." The report outlines a new framework for revitalizing public K–12 education across the nation. The report calls for a comprehensive new approach that focuses on organizing for student-based results. It proposes strategies prioritizing incentivizing educational mastery, minimizing rigid mandates, and cultivating a dynamic, responsive education workforce. Each recommendation is deliberately designed to interconnect with the others and be executed as a whole to effect meaningful change.</p>
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#93C5FD;">National Strategic Framework</span>
+        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1; letter-spacing:-0.3px;">Read the Full Report</h1>
+        <p style="margin:0; font-size:15px; line-height:1.6; color:#fff; text-wrap:pretty;">The Education Futures Council (EFC) has released its report, "Ours to Solve, Once – and For All." The report outlines a new framework for revitalizing public K–12 education across the nation. The report calls for a comprehensive new approach that focuses on organizing for student-based results. It proposes strategies prioritizing incentivizing educational mastery, minimizing rigid mandates, and cultivating a dynamic, responsive education workforce. Each recommendation is deliberately designed to interconnect with the others and be executed as a whole to effect meaningful change.</p>
         <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px 20px; padding-top:8px;">
-          <a href="https://www.hoover.org/sites/default/files/2024-10/EFC_OursToSolve_Web_101824.pdf" style="display:inline-flex; align-items:center; justify-content:center; height:44px; padding:12px 24px; border-radius:37px; background:#1E3A5F; color:#fff; font-weight:600; font-size:14px; box-sizing:border-box;" style-hover="background:#0F172A">Download Full Report (PDF)</a>
-          <a href="https://www.hoover.org/press/education-futures-council-unveils-report-ours-solve-once-and-for-all" style="font-size:13px; color:#475569; text-decoration:underline;">Press Release</a>
-          <span style="font-size:13px; color:#94A3B8;">Published October 2024</span>
+          <a href="https://www.hoover.org/sites/default/files/2024-10/EFC_OursToSolve_Web_101824.pdf" style="display:inline-flex; align-items:center; justify-content:center; height:44px; padding:12px 24px; border-radius:37px; background:rgba(255,255,255,0.24); box-shadow:inset 0 0 0 0.5px #fff; color:#fff; font-weight:600; font-size:14px; box-sizing:border-box;" style-hover="background:rgba(255,255,255,0.4)">Download Full Report (PDF)</a>
+          <a href="https://www.hoover.org/press/education-futures-council-unveils-report-ours-solve-once-and-for-all" style="font-size:13px; color:#fff; text-decoration:underline;">Press Release</a>
+          <span style="font-size:13px; color:#CBD5E1;">Published October 2024</span>
         </div>
       </div>
     </div>
@@ -54,9 +55,21 @@ a:hover{color:inherit}
       <img src="https://educationfuturescouncil.com/assets/podcast-hosts-DBqitJEm.webp" alt="AI generated podcast hosts discussing the report" style="width:clamp(96px,12vw,160px); height:clamp(96px,12vw,160px); border-radius:50%; object-fit:cover; display:block;">
       <div style="display:flex; flex-direction:column; gap:14px; min-width:0;">
         <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">Podcast · Episode 1</span>
-        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(26px,2.6vw,32px); line-height:1.1;">Why Read, When You Can Listen?!</h2>
+        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1;">Why Read, When You Can Listen?!</h2>
         <p style="margin:0; font-size:15px; line-height:1.6; color:#475569; text-wrap:pretty;">We know you're on the road and many things are competing for your attention. In an effort to practice what we preach, we've used the latest AI technology to create this unique podcast episode where our two AI hosts take a deep dive into the report.</p>
-        <audio controls preload="none" src="https://educationfuturescouncil.com/assets/hoover-episode-1-BeCrXPo2.wav" style="width:100%; max-width:720px; display:block;"></audio>
+        <audio ref="{{ audioRef }}" preload="metadata" src="https://educationfuturescouncil.com/assets/hoover-episode-1-BeCrXPo2.wav" style="display:none;"></audio>
+        <div role="group" aria-label="Episode 1 audio player" style="display:flex; align-items:center; gap:16px; width:100%; max-width:720px; padding:12px 16px; border-radius:6px; background:#fff; box-shadow:inset 0 0 0 1px #CBD5E1; box-sizing:border-box;">
+          <button onClick="{{ toggle }}" aria-label="{{ playLabel }}" style="flex-shrink:0; width:44px; height:44px; border-radius:50%; border:0; background:#1E3A5F; color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0;" style-hover="background:#0F172A">
+            <sc-if value="{{ playing }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="4" height="12" rx="1"></rect><rect x="9" y="2" width="4" height="12" rx="1"></rect></svg></sc-if>
+            <sc-if value="{{ paused }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5 L13.5 8 L4 13.5 Z"></path></svg></sc-if>
+          </button>
+          <span style="flex-shrink:0; font-weight:600; font-size:13px; color:#0F172A; font-variant-numeric:tabular-nums; min-width:92px;">Episode 1 &nbsp;<span style="font-weight:400; color:#475569;">{{ timeLabel }}</span></span>
+          <input type="range" min="0" max="1000" value="{{ progress }}" onInput="{{ seek }}" aria-label="Seek" style="flex:1; min-width:80px; accent-color:#1E3A5F; cursor:pointer;">
+          <button onClick="{{ toggleMute }}" aria-label="{{ muteLabel }}" style="flex-shrink:0; width:36px; height:36px; border:0; background:transparent; color:#1E3A5F; display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0;">
+            <sc-if value="{{ muted }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h3l4-3v10l-4-3H2z"></path><path d="M12 7l4 4M16 7l-4 4"></path></svg></sc-if>
+            <sc-if value="{{ unmuted }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h3l4-3v10l-4-3H2z"></path><path d="M12 6.5a4 4 0 0 1 0 5M14 4.5a7 7 0 0 1 0 9"></path></svg></sc-if>
+          </button>
+        </div>
         <a href="https://educationfuturescouncil.com/assets/ours_to_solve_video_transcript.txt" style="font-size:13px; color:#475569; text-decoration:underline;">Download Transcript</a>
       </div>
     </div>
@@ -66,8 +79,8 @@ a:hover{color:inherit}
     <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:32px;">
       <div style="display:flex; flex-direction:column; gap:12px; max-width:760px;">
         <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">Supportive Documentation</span>
-        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(28px,3vw,40px); line-height:1.1;">Additional Resources</h2>
-        <p style="margin:0; font-size:16px; line-height:1.6; color:#475569; text-wrap:pretty;">Explore supporting materials and resources, grounded in research and evidence, which reflect the last 40 years of K-12 education reform initiatives, the current state of our schools today, and a look-ahead to what could be possible for students and educators in a reimagined system.</p>
+        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1;">Additional Resources</h2>
+        <p style="margin:0; font-size:15px; line-height:1.6; color:#475569; text-wrap:pretty;">Explore supporting materials and resources, grounded in research and evidence, which reflect the last 40 years of K-12 education reform initiatives, the current state of our schools today, and a look-ahead to what could be possible for students and educators in a reimagined system.</p>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap:20px;">
         <sc-for list="{{ resources }}" as="r" hint-placeholder-count="6">
@@ -85,7 +98,7 @@ a:hover{color:inherit}
 
   <section style="background:#F1F5F9; padding:72px clamp(20px,4.4vw,64px); box-sizing:border-box;">
     <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:32px;">
-      <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(28px,3vw,40px); line-height:1.1;">Related Resources</h2>
+      <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1;">Related Resources</h2>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap:20px;">
         <sc-for list="{{ related }}" as="r" hint-placeholder-count="3">
           <a href="{{ r.href }}" style="display:flex; flex-direction:column; border-radius:6px; overflow:hidden; box-shadow:inset 0 0 0 1px #CBD5E1; background:#fff;" style-hover="box-shadow:inset 0 0 0 1px #93C5FD">
@@ -101,12 +114,12 @@ a:hover{color:inherit}
     <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:32px;">
       <div style="display:flex; flex-direction:column; gap:12px;">
         <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">From the Council</span>
-        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:clamp(28px,3vw,40px); line-height:1.1;">In Their Words</h2>
+        <h2 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1;">In Their Words</h2>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap:20px;">
         <blockquote style="margin:0; padding:32px; border-radius:6px; background:#1E3A5F; color:#fff; display:flex; flex-direction:column; gap:24px;">
           <span style="font-family:'Bree Serif', serif; font-size:48px; line-height:0.6; color:#93C5FD;">“</span>
-          <p style="margin:0; font-size:18px; line-height:1.55; text-wrap:pretty;">Education excellence is critical to the societal contract supporting our democracy and is inextricably tied to the success - or failure - of our nation.</p>
+          <p style="margin:0; font-size:16px; line-height:1.55; text-wrap:pretty;">Education excellence is critical to the societal contract supporting our democracy and is inextricably tied to the success - or failure - of our nation.</p>
           <footer style="border-top:1px solid rgba(255,255,255,0.25); padding-top:16px; display:flex; flex-direction:column; gap:4px;">
             <span style="font-weight:700; font-size:14px;">Secretary Condoleezza Rice</span>
             <span style="font-size:12px; color:#CBD5E1;">66th U.S. Secretary of State, Hoover Institution Director and co-chair of the Council</span>
@@ -114,7 +127,7 @@ a:hover{color:inherit}
         </blockquote>
         <blockquote style="margin:0; padding:32px; border-radius:6px; background:#fff; box-shadow:inset 0 0 0 1px #CBD5E1; display:flex; flex-direction:column; gap:24px;">
           <span style="font-family:'Bree Serif', serif; font-size:48px; line-height:0.6; color:#93C5FD;">“</span>
-          <p style="margin:0; font-size:18px; line-height:1.55; color:#0F172A; text-wrap:pretty;">Our "True North" must always point toward student outcomes. Despite a national commitment to the issue, steep increases in funding, and decades of reform efforts, our current system has been unable to reverse poor student outcomes.</p>
+          <p style="margin:0; font-size:16px; line-height:1.55; color:#0F172A; text-wrap:pretty;">Our "True North" must always point toward student outcomes. Despite a national commitment to the issue, steep increases in funding, and decades of reform efforts, our current system has been unable to reverse poor student outcomes.</p>
           <footer style="border-top:1px solid #E2E8F0; padding-top:16px; display:flex; flex-direction:column; gap:4px;">
             <span style="font-weight:700; font-size:14px;">The Education Futures Council</span>
             <span style="font-size:12px; color:#475569;">From the members' letter, October 2024</span>
@@ -133,16 +146,59 @@ a:hover{color:inherit}
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://educationfuturescouncil.com/" style="display:inline-flex; align-items:center; height:36px; padding:0 16px; border-radius:18px; box-shadow:inset 0 0 0 1px #CBD5E1; font-size:13px; color:#475569;" style-hover="box-shadow:inset 0 0 0 1px #1E3A5F">LinkedIn</a>
       </div>
     </div>
-  </section>
+  </section></main>
 
   <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
+  state = { playing: false, muted: false, t: 0, d: 0, video: 'yt' };
+  videos = [
+    { id: 'yt', part: 'Part 1:', title: 'Overview', src: 'https://www.youtube-nocookie.com/embed/K26-C_FowAY?rel=0', thumb: 'https://img.youtube.com/vi/K26-C_FowAY/hqdefault.jpg' },
+    { id: 'vimeo', part: 'Part 2:', title: 'Theory of Action', src: 'https://player.vimeo.com/video/1134313379?dnt=1&title=0&byline=0&portrait=0', thumb: 'https://vumbnail.com/1134313379_large.jpg' },
+  ];
+  audioRef = React.createRef();
+  componentDidMount() {
+    this.bind = setInterval(() => {
+      const el = this.audioRef.current; if (!el) return;
+      clearInterval(this.bind);
+      this.onTime = () => this.setState({ t: el.currentTime, d: el.duration || 0 });
+      this.onEnded = () => this.setState({ playing: false });
+      el.addEventListener('timeupdate', this.onTime);
+      el.addEventListener('loadedmetadata', this.onTime);
+      el.addEventListener('ended', this.onEnded);
+      if (el.duration) this.onTime();
+    }, 100);
+  }
+  componentWillUnmount() {
+    clearInterval(this.bind);
+    const el = this.audioRef.current;
+    if (el && this.onTime) { el.removeEventListener('timeupdate', this.onTime); el.removeEventListener('loadedmetadata', this.onTime); el.removeEventListener('ended', this.onEnded); }
+  }
+  fmt(s) { if (!isFinite(s)) return '0:00'; s = Math.floor(s); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
   renderVals() {
     const A = 'https://educationfuturescouncil.com/assets/';
+    const a = () => this.audioRef.current;
+    const { playing, muted, t, d } = this.state;
+    const active = this.videos.find(v => v.id === this.state.video) || this.videos[0];
     return {
+      activeId: active.id, activeSrc: active.src, activeTitle: 'Ours to Solve, Once and for All — ' + active.title,
+      videos: this.videos.map(v => {
+        const on = v.id === active.id;
+        return { ...v, active: on, inactive: !on, select: () => this.setState({ video: v.id }),
+          ring: on ? 'inset 0 0 0 2px #93C5FD, 0 0 0 4px rgba(147,197,253,0.3)' : 'inset 0 0 0 1px #BFDBFE',
+          thumbOpacity: on ? 1 : 0.75 };
+      }),
+      audioRef: this.audioRef,
+      playing, paused: !playing, muted, unmuted: !muted,
+      playLabel: playing ? 'Pause episode' : 'Play episode',
+      muteLabel: muted ? 'Unmute' : 'Mute',
+      timeLabel: this.fmt(t) + ' / ' + this.fmt(d),
+      progress: d ? Math.round(t / d * 1000) : 0,
+      toggle: () => { const el = a(); if (!el) return; if (el.paused) { el.play(); this.setState({ playing: true }); } else { el.pause(); this.setState({ playing: false }); } },
+      toggleMute: () => { const el = a(); if (!el) return; el.muted = !el.muted; this.setState({ muted: el.muted }); },
+      seek: (e) => { const el = a(); if (el && el.duration) { el.currentTime = e.target.value / 1000 * el.duration; this.setState({ t: el.currentTime }); } },
       resources: [
         { title: 'The Human Authority Needed For Good Schools', blurb: 'The litmus test for a good school is its culture—its caring, energy, mutual trust, and commitment to a common mission.', img: A + 'kids-on-laptop-BX6lPGf3.jpg', href: 'https://www.hoover.org/research/human-authority-needed-good-schools' },
         { title: 'Making Student Achievement The North Star of Our Education System', blurb: 'The public education system insufficiently incentivizes its leaders to prioritize student academic achievement.', img: A + 'readers-Bjea9Y0C.webp', href: 'https://www.hoover.org/research/making-student-achievement-north-star-our-education-system' },
