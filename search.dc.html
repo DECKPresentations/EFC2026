@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Search — The Education Futures Council</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+mark{background:#FDE68A;color:inherit;border-radius:2px;padding:0 1px}
+input:focus-visible{outline:2px solid #93C5FD;outline-offset:2px}
+</style>
+</helmet>
+<div data-screen-label="Search" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
+  <dc-import name="SiteHeader" theme="light" hint-size="100%,63px"></dc-import>
+  <main id="main"><section style="padding:64px clamp(20px,4.4vw,64px) 80px; box-sizing:border-box;">
+    <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
+      <div style="display:flex; flex-direction:column; gap:12px; max-width:800px;">
+        <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">Site Search</span>
+        <h1 style="margin:0; font-family:'Bree Serif', serif; font-weight:400; font-size:32px; line-height:1.1; letter-spacing:-0.3px;">Search results</h1>
+        <form onSubmit="{{ submit }}" role="search" style="display:flex; align-items:center; gap:10px; margin-top:8px; max-width:560px; height:48px; border-radius:48px; box-shadow:inset 0 0 0 1px #1E3A5F; padding:0 8px 0 18px; box-sizing:border-box;">
+          <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="#1E3A5F" stroke-width="1.5" stroke-linecap="round"><circle cx="6.2" cy="6.2" r="4.4"></circle><path d="M9.5 9.5L12.5 12.5"></path></svg>
+          <input type="search" value="{{ q }}" onChange="{{ onInput }}" placeholder="Search the site..." aria-label="Search the site" style="flex:1; min-width:0; background:transparent; border:0; outline:0; font-family:inherit; font-size:16px; color:#0F172A;">
+          <button type="submit" style="height:34px; padding:0 18px; border:0; border-radius:34px; background:#1E3A5F; color:#fff; font-family:inherit; font-weight:700; font-size:13px; cursor:pointer;">Search</button>
+        </form>
+        <p style="margin:4px 0 0; font-size:15px; color:#475569;">{{ summary }}</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <sc-for list="{{ results }}" as="r" hint-placeholder-count="0">
+          <a href="{{ r.href }}" style="display:flex; align-items:flex-start; gap:20px; padding:24px; border-radius:6px; background:#fff; box-shadow:inset 0 0 0 1px #CBD5E1;" style-hover="background:#F8FAFC">
+            <span style="flex-shrink:0; width:60px; height:60px; border-radius:6px; background:#F1F5F9; display:flex; align-items:center; justify-content:center; font-family:'Bree Serif', serif; font-size:18px; color:#1E3A5F;">{{ r.num }}</span>
+            <span style="display:flex; flex-direction:column; gap:6px; flex:1; min-width:0;">
+              <span style="font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#1E3A5F;">{{ r.kicker }}</span>
+              <span style="font-weight:700; font-size:17px; line-height:1.3; color:#0F172A; text-wrap:pretty;">{{ r.title }}</span>
+              <span style="font-size:14px; line-height:1.6; color:#334155; text-wrap:pretty;">{{ r.snippet }}</span>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section></main>
+  <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { q: new URLSearchParams(location.search).get('q') || '', typed: null, docs: null };
+  componentDidMount() {
+    fetch('search-index.json').then(r => r.json()).then(docs => this.setState({ docs }));
+    document.title = (this.state.q ? `"${this.state.q}" — ` : '') + 'Search — The Education Futures Council';
+  }
+  highlight(text, terms) {
+    const re = new RegExp('(' + terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'gi');
+    return text.split(re).map((p, i) => re.test(p) ? React.createElement('mark', { key: i }, p) : p);
+  }
+  renderVals() {
+    const q = this.state.q.trim();
+    const typed = this.state.typed ?? this.state.q;
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    let results = [];
+    if (this.state.docs && terms.length) {
+      results = this.state.docs.map(d => {
+        const hay = (d.heading + ' ' + d.text).toLowerCase();
+        let score = 0;
+        for (const t of terms) {
+          if (!hay.includes(t)) return null;
+          score += (d.heading.toLowerCase().includes(t) ? 5 : 0) + (d.type === 'page' ? 2 : 0) + 1;
+        }
+        return { d, score };
+      }).filter(Boolean).sort((a, b) => b.score - a.score).map(({ d }, i) => {
+        const lower = d.text.toLowerCase();
+        let pos = -1; for (const t of terms) { pos = lower.indexOf(t); if (pos >= 0) break; }
+        let start = Math.max(0, pos - 90); let snip = d.text.slice(start, start + 260);
+        if (start > 0) snip = '…' + snip; if (start + 260 < d.text.length) snip += '…';
+        return {
+          num: i + 1,
+          href: d.type === 'bib' && d.link ? d.link : d.href,
+          kicker: d.type === 'bib' ? 'Bibliography · ' + d.heading : d.page,
+          title: d.type === 'bib' ? this.highlight(d.text.replace(/https?:\/\/\S+/g, '').trim(), terms) : this.highlight(d.heading, terms),
+          snippet: d.type === 'bib' ? (d.link || '') : this.highlight(snip, terms),
+        };
+      });
+    }
+    const summary = !q ? 'Enter a term above to search pages and bibliography sources.'
+      : !this.state.docs ? 'Searching…'
+      : results.length ? `${results.length} result${results.length === 1 ? '' : 's'} for "${q}"`
+      : `No results for "${q}". Try a different or shorter term.`;
+    return {
+      q: typed, results, summary,
+      onInput: e => this.setState({ typed: e.target.value }),
+      submit: e => {
+        e.preventDefault();
+        const nq = typed.trim();
+        history.replaceState(null, '', nq ? '?q=' + encodeURIComponent(nq) : location.pathname);
+        this.setState({ q: nq, typed: null });
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
