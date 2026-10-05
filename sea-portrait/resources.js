@@ -15,4 +15,6 @@ window.__resources = {
   synth1: 'sea-portrait/img/synth1.jpg',
   synth3: 'sea-portrait/img/synth3.jpg',
   ribbonBg: 'assets/sea-scene.webp',
+  introPhoto: 'sea-portrait/img/intro-photo.webp',
+  whyPhoto: 'sea-portrait/img/why-photo.webp',
 };

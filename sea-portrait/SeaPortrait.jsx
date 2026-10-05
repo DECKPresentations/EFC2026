@@ -496,10 +496,11 @@ function RichParas({ paras }) {
 function OverviewPanel({ intro }) {
   if (intro.layout === 'howto') return <HowToPanel intro={intro} />;
   return (
-    <div className={'overview-inner wrap layout-' + intro.layout} key={intro.id}>
+    <div className={'overview-inner wrap layout-' + intro.layout + ((window.__resources && window.__resources[intro.thumbKey]) ? '' : ' no-thumb')} key={intro.id}>
+      {window.__resources && window.__resources[intro.thumbKey] ?
       <div className="panel-thumb">
-        <img src={(window.__resources && window.__resources[intro.thumbKey]) || intro.thumb} alt="Portrait of a State Education Agency diagram" draggable="false" />
-      </div>
+        <img src={window.__resources[intro.thumbKey]} alt="SEA Change" draggable="false" />
+      </div> : null}
       <div className="overview-text">
         {intro.eyebrow ? <p className="eyebrow">{intro.eyebrow}</p> : null}
         <h2>{intro.panelTitle}</h2>
@@ -632,19 +633,33 @@ function BraidStage({ selected, onSelect, compact }) {
     if (!el) return;
     const place = () => {
       const W = document.documentElement.clientWidth;
-      if (W < 760) { el.style.removeProperty('--art-top'); el.style.removeProperty('height'); return; }
+      const pageBg = el.closest('[data-screen-label="SEA Change Tool"]');
+      if (W < 760) { el.style.removeProperty('--art-top'); el.style.removeProperty('height'); if (pageBg) { pageBg.style.background = ''; } return; }
       const stageTop = el.getBoundingClientRect().top + window.scrollY;
       const artW = Math.min(el.clientWidth * 0.69, 813);
       const artH = artW * 2121 / 2161;
       const horizon = W * 0.4334;
-      const artTop = horizon - artH * 0.283 - stageTop;
+      const raw = horizon - artH * 0.283 - stageTop;
+      const artTop = Math.max(raw, 24);
+      // Content above the stage (intro trio) pushes the stage down; slide the page background down with it.
+      if (pageBg) {
+        const s = Math.round(artTop - raw);
+        // gradient layer fades the image's top edge into the page navy so there is no seam
+        pageBg.style.background = s > 0
+          ? 'linear-gradient(#071932, rgba(7,25,50,0)) center ' + s + 'px / 100% 240px no-repeat, url(assets/sea-scene.webp) center ' + s + 'px / 100% auto no-repeat, #071932'
+          : '';
+      }
       el.style.setProperty('--art-top', artTop + 'px');
       el.style.height = Math.max(artTop + artH + 8, 200) + 'px';
     };
     place();
     const t = setTimeout(place, 300);
     window.addEventListener('resize', place);
-    return () => { clearTimeout(t); window.removeEventListener('resize', place); };
+    const ro = new ResizeObserver(place);
+    if (el.previousElementSibling) ro.observe(el.previousElementSibling);
+    const sec = el.closest('.diagram-section');
+    if (sec && sec.previousElementSibling) ro.observe(sec.previousElementSibling);
+    return () => { clearTimeout(t); ro.disconnect(); window.removeEventListener('resize', place); };
   }, []);
   return (
     <div ref={stageRef} className={'ribbon-stage' + (selected ? ' has-sel' : '') + (compact ? ' compact' : '')}>
@@ -717,7 +732,7 @@ function Diagram({ selected, onSelect, forceMobile }) {
 
   return (
     <section className="diagram-section" data-screen-label="Diagram">
-      
+      <SelectCue />
       {body}
     </section>
   );
@@ -885,6 +900,7 @@ function SeaPortrait() {
   }
   return (
     <div className="sea-portrait">
+      <IntroSection />
       <Diagram selected={selectedArea} onSelect={handleSelect} />
       <div ref={tableRef}>
         <TableZone area={area} onOpenAI={setAiContext} onOpenResources={(d) => setResContext(d)} onOpenImage={(d) => setImgContext(d)} />

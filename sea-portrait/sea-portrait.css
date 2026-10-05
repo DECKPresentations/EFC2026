@@ -748,3 +748,7 @@
   .sea-portrait .diagram-section { overflow: hidden; }
 }
 .sea-portrait .diagram-section { padding-top: 0; }
+.sea-portrait .intro-grid.wrap, .sea-portrait .overview-inner.wrap { max-width: 1440px; padding-left: clamp(20px, 4.4vw, 64px); padding-right: clamp(20px, 4.4vw, 64px); }
+.sea-portrait .overview-inner.no-thumb { grid-template-columns: 1fr; }
+.sea-portrait .intro-col .pill-btn { background: #93C5FD; color: #1E3A5F; font-weight: 600; font-size: 13px; padding: 10px 20px; }
+.sea-portrait .intro-col .pill-btn:hover { background: #BFDBFE; }

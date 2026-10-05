@@ -1,4 +1,4 @@
-// Portrait of a State Education Agency — content data (R8)
+// SEA Change — content data (R8)
 (function () {
   const AREA_DEFS = [
     {
@@ -76,21 +76,21 @@
     {
       id: 'intro',
       layout: 'overview',
-      title: 'Introducing the\nPortrait of an SEA',
+      title: 'Introducing\nSEA Change',
       eyebrow: 'Overview',
-      panelTitle: 'Introducing the Portrait of an SEA',
+      panelTitle: 'Introducing SEA Change',
       teaser: [
-        'The Portrait of a State Education Agency is ',
+        'SEA Change is ',
         { b: 'a functional blueprint for how a high-capacity, future-ready SEA must operate in order to improve student outcomes.' },
       ],
-      lead: 'The Portrait of a State Education Agency is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.',
+      lead: 'SEA Change is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.',
       paras: [
         [
-          { b: 'The Portrait of a State Education Agency is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.' },
-          ' Drawing on the idea of a "Portrait of a Graduate," this Portrait seeks to define the competencies an SEA must possess and the functions it must perform to lead effectively across policy, implementation, innovation, operations, data, and public trust.',
+          { b: 'SEA Change is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.' },
+          ' Drawing on the idea of a "Portrait of a Graduate," this blueprint seeks to define the competencies an SEA must possess and the functions it must perform to lead effectively across policy, implementation, innovation, operations, data, and public trust.',
         ],
         [
-          'The Portrait was informed by current and former state chiefs across varied policy contexts and political landscapes. While states differ in structure, priorities, and constraints, co-creators consistently affirmed the same core direction: stronger student-outcomes focus, deeper local capacity-building, more strategic leadership, and more adaptive, future-ready agencies.',
+          'SEA Change was informed by current and former state chiefs across varied policy contexts and political landscapes. While states differ in structure, priorities, and constraints, co-creators consistently affirmed the same core direction: stronger student-outcomes focus, deeper local capacity-building, more strategic leadership, and more adaptive, future-ready agencies.',
         ],
       ],
       listLabel: 'The model centers on three core commitments:',
@@ -132,10 +132,10 @@
     {
       id: 'how',
       layout: 'howto',
-      title: 'How to Use the Portrait',
-      panelTitle: 'How to Use the Portrait',
+      title: 'How to Use SEA Change',
+      panelTitle: 'How to Use SEA Change',
       teaser: [
-        'The Portrait provides a shared blueprint for reflection, planning, and long-term organizational development. Because every state education agency operates in a different context, leaders can use it to assess current capabilities, identify priorities, guide modernization efforts, make strategic investments, and strengthen their agency over time.',
+        'SEA Change provides a shared framework for reflection, planning, and long-term organizational development. Because every state education agency operates in a different context, leaders can use it to assess current capabilities, identify priorities, guide modernization efforts, make strategic investments, and strengthen their agency over time.',
       ],
       lead: "This site isn't a checklist. Every state faces its own challenge, so this blueprint is designed to help orient strategy, assess current capacity, prioritize investments, guide modernization efforts, and support long-term organizational development.",
       left: {
@@ -144,7 +144,7 @@
             'It is intentionally ambitious and should not be approached as a checklist. Rather, leadership teams can use it to ', { b: 'orient strategy, assess current capacity, prioritize investments, guide modernization efforts, and support long-term organizational development.' },
           ],
         ],
-        listLabel: 'States may use the Portrait to:',
+        listLabel: 'States may use this blueprint to:',
         list: [
           [{ b: 'Assess' }, ' organizational strengths and gaps'],
           [{ b: 'Clarify' }, ' priorities and sequencing'],
@@ -159,7 +159,7 @@
         ],
       },
       right: {
-        label: 'Two additional resources accompany the Portrait:',
+        label: 'Two additional resources accompany this blueprint:',
         cards: [
           { chip: 'ai', title: 'AI Callouts:', text: 'Illustrative examples of how AI can transform how SEAs operate, build capacity, steward innovation, and support local systems in achieving better outcomes for students.' },
           { chip: 'resources', title: 'Resources:', text: 'Examples of competencies and functions already emerging across states in varied contexts and stages of development.' },
@@ -186,7 +186,7 @@
       'Placeholder \u2014 how AI applies to ' + context + ': illustrative examples of how AI-enabled tools can reduce manual burden, surface patterns earlier, and free staff time for higher-judgment work.',
       'Placeholder \u2014 responsible adoption starts with clear use policies, human review of consequential decisions, and transparency with districts, educators, and families about where AI is used.',
       'Placeholder \u2014 practical near-term applications include drafting and summarization, data quality checks, knowledge-base search, translation and accessibility, and early-warning signal detection.',
-      'Placeholder \u2014 the Portrait treats AI fluency as an institutional competency: agencies should build shared literacy, pilot deliberately, measure impact, and scale only what demonstrably improves outcomes.',
+      'Placeholder \u2014 SEA Change treats AI fluency as an institutional competency: agencies should build shared literacy, pilot deliberately, measure impact, and scale only what demonstrably improves outcomes.',
     ];
   }
 
