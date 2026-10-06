@@ -76,9 +76,9 @@
     {
       id: 'intro',
       layout: 'overview',
-      title: 'Introducing\nSEA Change',
+      title: 'What is\nSEA Change?',
       eyebrow: 'Overview',
-      panelTitle: 'Introducing SEA Change',
+      panelTitle: 'What is SEA Change?',
       teaser: [
         'SEA Change is ',
         { b: 'a functional blueprint for how a high-capacity, future-ready SEA must operate in order to improve student outcomes.' },
