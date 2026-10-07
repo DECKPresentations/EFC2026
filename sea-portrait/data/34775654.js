@@ -83,20 +83,20 @@
         'SEA Change is ',
         { b: 'a functional blueprint for how a high-capacity, future-ready SEA must operate in order to improve student outcomes.' },
       ],
-      lead: 'SEA Change is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.',
+      lead: "A comprehensive set of strategies and tactics that position a state education agency to drive comprehensive transformation in its state's K-12 sector.",
       paras: [
         [
-          { b: 'SEA Change is a functional blueprint for how a high-capacity, future-ready SEA must operate to improve student outcomes.' },
-          ' Drawing on the idea of a "Portrait of a Graduate," this blueprint seeks to define the competencies an SEA must possess and the functions it must perform to lead effectively across policy, implementation, innovation, operations, data, and public trust.',
+          { b: "A comprehensive set of strategies and tactics that position a state education agency to drive comprehensive transformation in its state's K-12 sector." },
+          ' The blueprint defines the competencies of an SEA and the functions needed to lead effectively.',
         ],
         [
-          'SEA Change was informed by current and former state chiefs across varied policy contexts and political landscapes. While states differ in structure, priorities, and constraints, co-creators consistently affirmed the same core direction: stronger student-outcomes focus, deeper local capacity-building, more strategic leadership, and more adaptive, future-ready agencies.',
+          'SEA Change was informed by current and former state chiefs across varied policy contexts and political landscapes. While states differ in structure, priorities, and constraints, the co-creators consistently affirmed the same core direction: stronger student-outcomes focus, deeper local capacity-building, more strategic leadership, and more adaptive, future-ready agencies.',
         ],
       ],
       listLabel: 'The model centers on three core commitments:',
       list: [
         "Centering the agency's work on student learning and long-term outcomes",
-        'Embedding innovation and responsible AI-enabled improvement as expected practice',
+        'Embedding innovation and improvement as expected practices',
         'Building the capacity and agency of local leaders, educators, and communities',
       ],
       thumb: 'imgs/intro-photo.webp',
@@ -120,7 +120,7 @@
           'Historically, SEAs have often been asked to respond to change more than drive it. But the scale and pace of today\u2019s challenges ', { b: 'require something different.' },
         ],
         [
-          'As artificial intelligence, demographic shifts, workforce transformation, and declining trust in institutions continue to reshape the educational landscape, SEAs must become more ', { b: 'proactive leaders of coherent, adaptive learning systems' }, ' \u2014 strengthening local capacity, modernizing infrastructure, stewarding innovation responsibly, and helping communities adapt to rapid change.',
+          'As artificial intelligence, demographic shifts, workforce transformation, and declining trust in institutions continue to reshape the educational landscape, SEAs are called to become more ', { b: 'proactive leaders of coherent, adaptive learning systems' }, ' \u2014 strengthening local capacity, modernizing infrastructure, stewarding innovation responsibly, and helping communities adapt to rapid change.',
         ],
         [
           'If learning happens locally, then SEAs cannot improve outcomes simply by directing change from afar. They must increasingly organize around ', { b: 'enabling local leaders, educators, schools, and communities' }, ' to do their best work while maintaining coherence, accountability, and strategic direction across the system.',
@@ -135,7 +135,7 @@
       title: 'How to Use SEA Change',
       panelTitle: 'How to Use SEA Change',
       teaser: [
-        'SEA Change provides a shared framework for reflection, planning, and long-term organizational development. Because every state education agency operates in a different context, leaders can use it to assess current capabilities, identify priorities, guide modernization efforts, make strategic investments, and strengthen their agency over time.',
+        'SEA Change provides a shared framework for reflection, planning, and long-term organizational development. Intentionally flexible, it can be used by leaders to assess current capabilities, identify priorities, guide modernization efforts, make strategic investments, and strengthen their agency over time.',
       ],
       lead: "This site isn't a checklist. Every state faces its own challenge, so this blueprint is designed to help orient strategy, assess current capacity, prioritize investments, guide modernization efforts, and support long-term organizational development.",
       left: {

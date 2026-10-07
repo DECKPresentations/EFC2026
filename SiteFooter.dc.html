@@ -19,7 +19,8 @@ a:focus-visible{outline:2px solid #93C5FD;outline-offset:2px}
 <footer style="background:#1E3A5F; color:#fff; font-family:'Hanken Grotesk', sans-serif; padding:70px clamp(20px,4.4vw,64px) 48px;">
   <div style="max-width:1312px; margin:0 auto; display:flex; flex-direction:column; gap:14px;">
     <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:32px 48px;">
-      <a href="home.dc.html" style="font-weight:700; font-size:14px;">The Education Futures Council</a>
+      <sc-if value="{{ showTitle }}" hint-placeholder-val="{{ true }}"><a href="home.dc.html" style="font-weight:700; font-size:14px;">The Education Futures Council</a></sc-if>
+      <sc-if value="{{ hideTitle }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true"></span></sc-if>
       <div style="display:flex; flex-wrap:wrap; gap:32px 80px;">
         <div style="display:flex; flex-direction:column; gap:10px; min-width:160px;">
           <span style="font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase;">Our Initiatives</span>
@@ -42,5 +43,12 @@ a:focus-visible{outline:2px solid #93C5FD;outline-offset:2px}
   </div>
 </footer>
 </x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;hideTitle&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showTitle: !this.props.hideTitle, hideTitle: !!this.props.hideTitle };
+  }
+}
+</script>
 </body>
 </html>

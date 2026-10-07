@@ -712,7 +712,7 @@ function BraidStage({ selected, onSelect, compact }) {
 function SelectCue() {
   return (
     <div className="select-cue">
-      <p className="l1">Select an attribute below</p>
+      <p className="l1">Select a section below</p>
       <p className="l2">to explore competencies and functions</p>
       <span className="tri">▼</span>
     </div>

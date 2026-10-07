@@ -20,8 +20,8 @@ a:hover{color:inherit}
 </style>
 </helmet>
 <div data-screen-label="Home" style="font-family:'Hanken Grotesk', sans-serif; color:#0F172A; position:relative;">
-  <dc-import name="SiteHeader" theme="dark" hint-size="100%,63px"></dc-import>
-  <main id="main"><section style="position:relative; min-height:min(956px, 100svh); background:linear-gradient(180deg, rgba(0,37,113,0.74) 41.83%, rgba(0,70,215,0.15) 93.75%), url(assets/hero-bg.png) center / cover no-repeat; display:flex; align-items:center; justify-content:center; padding:clamp(120px,16vw,235px) clamp(20px,4.4vw,64px) clamp(96px,12vw,200px); box-sizing:border-box;">
+  <dc-import name="SiteHeader" theme="dark" hide-title="{{ true }}" hint-size="100%,63px"></dc-import>
+  <main id="main"><section style="position:relative; min-height:min(956px, 100svh); background:linear-gradient(180deg, rgba(0,37,113,0.74) 41.83%, rgba(0,70,215,0.15) 93.75%), url(assets/header-circuit.png) center / cover no-repeat; display:flex; align-items:center; justify-content:center; padding:clamp(120px,16vw,235px) clamp(20px,4.4vw,64px) clamp(96px,12vw,200px); box-sizing:border-box;">
     <div style="display:flex; flex-direction:column; align-items:center; gap:28px; max-width:700px; text-align:center; color:#fff;">
       <span style="font-weight:700; font-size:11px; letter-spacing:clamp(3px,0.5vw,7px); text-transform:uppercase;">Hoover Institution | Education Futures Council</span>
       <h1 style="margin:0; font-weight:400; font-size:clamp(34px,4.2vw,52px); line-height:1.05; letter-spacing:-0.3px; text-wrap:balance;"><span style="font-family:'Bree Serif', serif;">Securing the outcomes</span><br><span style="font-weight:400;">our students need</span></h1>
@@ -51,7 +51,7 @@ a:hover{color:inherit}
       <span style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:37px; border-radius:45px; background:#93C5FD; color:#1E3A5F; font-weight:600; font-size:13px; margin-top:4px;">Explore SEA Change</span>
     </a>
   </section></main>
-  <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
+  <dc-import name="SiteFooter" hide-title="{{ true }}" hint-size="100%,297px"></dc-import>
 </div>
 </x-dc>
 </body>
