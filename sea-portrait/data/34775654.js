@@ -80,8 +80,7 @@
       eyebrow: 'Overview',
       panelTitle: 'What is SEA Change?',
       teaser: [
-        'SEA Change is ',
-        { b: 'a functional blueprint for how a high-capacity, future-ready SEA must operate in order to improve student outcomes.' },
+        { b: "A comprehensive set of strategies and tactics that position a state education agency to drive comprehensive transformation in its state's K-12 sector." },
       ],
       lead: "A comprehensive set of strategies and tactics that position a state education agency to drive comprehensive transformation in its state's K-12 sector.",
       paras: [

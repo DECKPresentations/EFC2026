@@ -163,7 +163,7 @@ a:hover{color:inherit}
   <dc-import name="SiteFooter" hint-size="100%,297px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;overviewPoster&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Cover on gray&quot;,&quot;Video still (7:17)&quot;],&quot;default&quot;:&quot;Cover on gray&quot;,&quot;tsType&quot;:&quot;'Cover on gray' | 'Video still (7:17)'&quot;,&quot;section&quot;:&quot;Main video player&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;overviewPoster&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;New thumbnail&quot;,&quot;Cover on gray&quot;,&quot;Video still (7:17)&quot;],&quot;default&quot;:&quot;New thumbnail&quot;,&quot;tsType&quot;:&quot;'New thumbnail' | 'Cover on gray' | 'Video still (7:17)'&quot;,&quot;section&quot;:&quot;Main video player&quot;}}">
 class Component extends DCLogic {
   state = { playing: false, muted: false, t: 0, d: 0, video: 'yt', started: false };
   videos = [
@@ -196,7 +196,7 @@ class Component extends DCLogic {
     const { playing, muted, t, d } = this.state;
     const active = this.videos.find(v => v.id === this.state.video) || this.videos[0];
     return {
-      activeId: active.id, activeSrc: active.src + (this.state.started ? '&autoplay=1' : ''), activeBg: 'url("' + (active.id === 'yt' && (this.props.overviewPoster ?? 'Cover on gray') === 'Cover on gray' ? 'assets/overview-poster-cover.jpg' : active.thumb) + '")', started: this.state.started, notStarted: !this.state.started, start: () => this.setState({ started: true }), activeTitle: 'Ours to Solve, Once and for All — ' + active.title,
+      activeId: active.id, activeSrc: active.src + (this.state.started ? '&autoplay=1' : ''), activeBg: 'url("' + (active.id !== 'yt' ? active.thumb : ({ 'New thumbnail': 'assets/overview-poster-new.jpg', 'Cover on gray': 'assets/overview-poster-cover.jpg' })[this.props.overviewPoster ?? 'New thumbnail'] || active.thumb) + '")', started: this.state.started, notStarted: !this.state.started, start: () => this.setState({ started: true }), activeTitle: 'Ours to Solve, Once and for All — ' + active.title,
       videos: this.videos.map(v => {
         const on = v.id === active.id;
         return { ...v, active: on, inactive: !on, select: () => this.setState({ video: v.id, started: true }),

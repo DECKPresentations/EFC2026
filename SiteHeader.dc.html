@@ -21,8 +21,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #93C5
 <a href="#main" style="position:absolute; left:16px; top:-100px; z-index:100; padding:10px 16px; border-radius:6px; background:#fff; color:#1E3A5F; font-weight:700; font-size:14px;" style-focus="top:12px">Skip to main content</a>
 <header style="position: {{ position }}; top:0; left:0; right:0; z-index:50; background: {{ bg }}; border-bottom: {{ border }}; font-family:'Hanken Grotesk', sans-serif;">
   <div style="max-width:1440px; margin:0 auto; padding:20px clamp(20px,4.4vw,64px); display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:63px; box-sizing:border-box;">
-    <sc-if value="{{ showTitle }}" hint-placeholder-val="{{ true }}"><a href="home.dc.html" style="font-weight:800; font-size:18px; letter-spacing:-0.3px; color: {{ fg }}; white-space:nowrap;">The Education Futures Council</a></sc-if>
-    <sc-if value="{{ hideTitle }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true"></span></sc-if>
+    <span aria-hidden="true"></span>
     <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
       <nav aria-label="Primary" style="display:flex; align-items:center; gap:36px;">
         <div style="position:relative;" onMouseEnter="{{ openVision }}" onMouseLeave="{{ closeMenu }}">
