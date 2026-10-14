@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<nav aria-label="Main" style="min-height:76px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 32px; background:#04184d; color:#fff; padding:12px clamp(20px,6.7vw,96px); border-bottom:1px solid rgba(255,255,255,0.08); position:relative; z-index:20; box-sizing:border-box; font-family:Inter, sans-serif;">
+  <a href="home.dc.html" aria-label="HESI home" style="display:flex; align-items:center; gap:14px; color:#fff; text-decoration:none;">
+    <span style="flex-shrink:0; width:44px; height:34px; border-radius:6px; background:#c27a3e; display:grid; place-items:center; font:700 12px Inter, sans-serif; letter-spacing:0.06em; color:#fff;">HESI</span>
+    <span style="display:flex; flex-direction:column; gap:3px;">
+      <b style="font:600 16px Lora, serif; letter-spacing:0.01em;">Hoover Education Success Initiative</b>
+      <small style="font:500 10px Inter, sans-serif; letter-spacing:0.16em; text-transform:uppercase; color:#aab3c5;">Hoover Institution · Stanford University</small>
+    </span>
+  </a>
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px 30px; font:500 14px Inter, sans-serif; color:#d5dbe7;">
+    <a href="home.dc.html" aria-current="{{ homeCurrent }}" style="color: {{ homeColor }}; border-bottom:2px solid {{ homeLine }}; padding:4px 0; text-decoration:none;" style-hover="color:#fff">Home</a>
+    <a href="vision.dc.html" aria-current="{{ visionCurrent }}" style="color: {{ visionColor }}; border-bottom:2px solid {{ visionLine }}; padding:4px 0; text-decoration:none;" style-hover="color:#fff">National Vision</a>
+    <a href="state-tools.dc.html" aria-current="{{ stateCurrent }}" style="color: {{ stateColor }}; border-bottom:2px solid {{ stateLine }}; padding:4px 0; text-decoration:none;" style-hover="color:#fff">State Tools</a>
+    <a href="local-tools.dc.html" aria-current="{{ localCurrent }}" style="color: {{ localColor }}; border-bottom:2px solid {{ localLine }}; padding:4px 0; text-decoration:none;" style-hover="color:#fff">Local Tools</a>
+    <span onMouseEnter="{{ openMenu }}" onMouseLeave="{{ closeMenu }}" style="position:relative; margin-left:8px;">
+      <button type="button" onClick="{{ toggleMenu }}" aria-haspopup="true" aria-expanded="{{ open }}" style="display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:999px; background:#c27a3e; border:1px solid #e0a46a; color:#fff; font:600 13px Inter, sans-serif; cursor:pointer; white-space:nowrap;" style-hover="background:#cf8749">Learn More <span aria-hidden="true" style="font-size:10px;">▾</span></button>
+      <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; right:0; top:100%; padding-top:10px; width:300px; z-index:30;">
+          <div style="background:#0b1a47; border:1px solid rgba(224,164,106,0.45); border-radius:10px; box-shadow:0 18px 40px rgba(0,0,0,0.45); padding:8px; display:flex; flex-direction:column;">
+            <a href="team.dc.html" style="display:flex; flex-direction:column; gap:4px; padding:14px 16px; border-radius:8px; color:#fff; font:600 14px Inter, sans-serif; text-decoration:none;" style-hover="background:rgba(255,255,255,0.06)">Meet the Team<small style="font:400 12.5px Inter, sans-serif; color:#9fb0d3;">The people behind HESI’s work on transformation</small></a>
+            <a href="contact.dc.html" style="display:flex; flex-direction:column; gap:4px; padding:14px 16px; border-radius:8px; color:#fff; font:600 14px Inter, sans-serif; text-decoration:none;" style-hover="background:rgba(255,255,255,0.06)">Contact Us<small style="font:400 12.5px Inter, sans-serif; color:#9fb0d3;">Questions, partnerships and media inquiries</small></a>
+          </div>
+        </div>
+      </sc-if>
+    </span>
+  </div>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:360},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;vision&quot;,&quot;state&quot;,&quot;local&quot;,&quot;none&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;'home'|'vision'|'state'|'local'|'none'&quot;}}">
+class Component extends DCLogic {
+  state = { open: false };
+  componentDidMount() {
+    this.onKey = e => { if (e.key === 'Escape') this.setState({ open: false }); };
+    this.onDoc = () => this.setState({ open: false });
+    document.addEventListener('keydown', this.onKey);
+    document.addEventListener('click', this.onDoc);
+  }
+  componentWillUnmount() { document.removeEventListener('keydown', this.onKey); document.removeEventListener('click', this.onDoc); }
+  renderVals() {
+    const a = this.props.active ?? 'home';
+    const v = {};
+    ['home', 'vision', 'state', 'local'].forEach(k => {
+      const on = k === a;
+      v[k + 'Color'] = on ? '#fff' : '#d5dbe7';
+      v[k + 'Line'] = on ? '#e0a46a' : 'transparent';
+      v[k + 'Current'] = on ? 'page' : undefined;
+    });
+    return {
+      ...v,
+      open: this.state.open,
+      openMenu: () => this.setState({ open: true }),
+      closeMenu: () => this.setState({ open: false }),
+      toggleMenu: e => { e.stopPropagation(); this.setState(s => ({ open: !s.open })); },
+    };
+  }
+}
+</script>
+</body>
+</html>

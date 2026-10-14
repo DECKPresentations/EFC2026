@@ -1,0 +1,603 @@
+{
+ "intro": "Proposing a new way to approach education in the United States is an important and delicate project that requires deep research and careful consideration of what came before and what is currently under consideration. Here is a (evolving) list of resources that have gone into the materials on this website and the report.",
+ "sections": [
+  {
+   "title": "I. Introduction",
+   "cites": [
+    {
+     "text": "Chubb, John E., and Terry M. Moe. \"Politics, Markets, and the Organization of Schools.\" British Journal of Sociology of Education 12, no. 3 (1991): 381–96. http://www.jstor.org/stable/1393043.",
+     "href": "http://www.jstor.org/stable/1393043"
+    },
+    {
+     "text": "Cohen, David K., and Susan L. Moffitt. The Ordeal of Equality: Did Federal Regulation Fix the Schools? Cambridge, MA: Harvard University Press, 2009.",
+     "href": null
+    },
+    {
+     "text": "Coleman, James S., et al. Equality of Educational Opportunity. Washington, D.C.: United States Department of Health, Education, and Welfare, Office of Education, 1966. https://files.eric.ed.gov/fulltext/ED012275.pdf.",
+     "href": "https://files.eric.ed.gov/fulltext/ED012275.pdf"
+    },
+    {
+     "text": "Daly, Tim. \"The Rise and Fall of Finland Mania.\" Education Daly. Jan 2024. https://www.educationdaly.us/p/the-rise-and-fall-of-finland-mania.",
+     "href": "https://www.educationdaly.us/p/the-rise-and-fall-of-finland-mania"
+    },
+    {
+     "text": "Dee, Thomas S. School Turnarounds: Evidence from the 2009 Stimulus. NBER Working Paper No. 17990. Cambridge, MA: National Bureau of Economic Research, 2012. https://www.nber.org/papers/w17990.",
+     "href": "https://www.nber.org/papers/w17990"
+    },
+    {
+     "text": "Elmore, Richard F. \"Backward Mapping: Implementation Research and Policy Decisions.\" Political Science Quarterly 94, no. 4 (Winter 1979-1980): 601-616.",
+     "href": null
+    },
+    {
+     "text": "Gardner, David P. \"A Nation At Risk: The Imperative For Educational Reform. An Open Letter to the American People. A Report to the Nation and the Secretary of Education.\" ERIC, Department of Education, Washington, DC, April 1983. https://eric.ed.gov/?id=ED226006.",
+     "href": "https://eric.ed.gov/?id=ED226006"
+    },
+    {
+     "text": "Hanushek, Eric A., and Bradley Strauss. \"A Global Perspective on US Learning Losses.\" Hoover Education Success Initiative. Hoover Institution, 2024. https://www.hoover.org/research/global-perspective-us-learning-losses.",
+     "href": "https://www.hoover.org/research/global-perspective-us-learning-losses"
+    },
+    {
+     "text": "Herman, Rebecca, et al. Turning Around Chronically Low-Performing Schools: A Practice Guide (NCEE #2008-4020). Washington, DC: National Center for Education Evaluation and Regional Assistance, Institute of Education Sciences, U.S. Department of Education, 2008. http://ies.ed.gov/ncee/wwc/publications/practiceguides.",
+     "href": "http://ies.ed.gov/ncee/wwc/publications/practiceguides"
+    },
+    {
+     "text": "Hess, Frederick M. \"How to Be Right 80% of the Time in Education: Education Reform Fads.\" American Enterprise Institute, April 4, 2024. https://www.aei.org/op-eds/how-to-be-right-80-of-the-time-in-education/?mkt_tok=NDc1LVBCUS05NzEAAAGR7_wZ8lhvbwoe0dygJ0WT7SIstiOeB4pi5BXLsMdSgI2gubi6C_4NQdesLmlPZ79tsuCDo-sPUFqtoKWwc4iblYiOxWWTuBB9R9pkdmE6aSwaCA1u.",
+     "href": "https://www.aei.org/op-eds/how-to-be-right-80-of-the-time-in-education/?mkt_tok=NDc1LVBCUS05NzEAAAGR7_wZ8lhvbwoe0dygJ0WT7SIstiOeB4pi5BXLsMdSgI2gubi6C_4NQdesLmlPZ79tsuCDo-sPUFqtoKWwc4iblYiOxWWTuBB9R9pkdmE6aSwaCA1u"
+    },
+    {
+     "text": "Hess, Frederick M., and Max Eden, eds. The Every Student Succeeds Act: What It Means for Schools, Systems, and States. Cambridge, MA: Harvard Education Press, 2017.",
+     "href": null
+    },
+    {
+     "text": "Hess, Frederick M. Spinning Wheels: The Politics of Urban School Reform. Washington, D.C.: Brookings Institution Press, 1999.",
+     "href": null
+    },
+    {
+     "text": "Hirsch, E.D., Jr. The Schools We Need: And Why We Don't Have Them. New York: Doubleday, 1996.",
+     "href": null
+    },
+    {
+     "text": "Institute of Education Sciences. School Improvement Grants: Implementation and Effectiveness. Washington, DC: U.S. Department of Education, 2017. https://ies.ed.gov/ncee/pubs/20174013/pdf/20174013.pdf.",
+     "href": "https://ies.ed.gov/ncee/pubs/20174013/pdf/20174013.pdf"
+    },
+    {
+     "text": "Jennings, Jack. Fatigued by School Reform. Cambridge, MA: Harvard Education Press, 2015.",
+     "href": null
+    },
+    {
+     "text": "Jennings, Jack. Presidents, Congress, and the Public Schools: The Politics of Education Reform. Cambridge, MA: Harvard Education Press, 2015.",
+     "href": null
+    },
+    {
+     "text": "Johns Hopkins University. \"The Coleman Report: 50 Years Later.\" Johns Hopkins Magazine, Winter 2016. https://hub.jhu.edu/magazine/2016/winter/coleman-report-public-education/.",
+     "href": "https://hub.jhu.edu/magazine/2016/winter/coleman-report-public-education/"
+    },
+    {
+     "text": "Kolderie, Ted. The Split Screen Strategy: How to Turn Education Into a Self-Improving System. Education Evolving, 2015.",
+     "href": null
+    },
+    {
+     "text": "McLaughlin, Milbrey. Contexts That Matter for Teaching and Learning: Strategic Opportunities for Meeting the Nation's Educational Goals. Stanford, CA: Stanford University, Center for Research on the Context of Secondary School Teaching, 1993.",
+     "href": null
+    },
+    {
+     "text": "Nathan, Linda, et. al. \"Big Problems Require Big Solutions.\" Kappan 105, no. 6 (March 2024): 26-31. https://kappanonline.org/big-education-problems-big-solutions-nathan/.",
+     "href": "https://kappanonline.org/big-education-problems-big-solutions-nathan/"
+    },
+    {
+     "text": "The Education Alliance at Brown University. Leadership Capacities for a Changing Environment: State and District Responses to the NCLB Act of 2001. Providence, RI: Brown University, 2005.",
+     "href": null
+    },
+    {
+     "text": "Tyack, David B. The One Best System: A History of American Urban Education. Harvard University Press, 1974. https://doi.org/10.2307/j.ctv136c61j.",
+     "href": "https://doi.org/10.2307/j.ctv136c61j"
+    },
+    {
+     "text": "Tyack, David, and Larry Cuban. Tinkering toward Utopia. Harvard University Press, 1995. https://doi.org/10.2307/j.ctvjz83cb.",
+     "href": "https://doi.org/10.2307/j.ctvjz83cb"
+    }
+   ]
+  },
+  {
+   "title": "II. Change is Imperative",
+   "cites": [
+    {
+     "text": "Aldeman, Chad. \"Is Public Education Actually Public? Is Public Education the Foundation of American Democracy? Public Education Not Open to All for Most of Our History. Link Between Schools and Democracy Tenuous, and Best Approach is to Support a Variety of School Approaches.\" The 74 Million, June 26, 2024. https://www.the74million.org/article/is-public-education-actually-public-and-how-important-is-it-for-democracy/.",
+     "href": "https://www.the74million.org/article/is-public-education-actually-public-and-how-important-is-it-for-democracy/"
+    },
+    {
+     "text": "American Institutes for Research. \"Three Decades of Education Reform: Are We Still a Nation at Risk?\" October 30, 2013. https://www.air.org/resource/spotlight/three-decades-education-reform-are-we-still-nation-risk.",
+     "href": "https://www.air.org/resource/spotlight/three-decades-education-reform-are-we-still-nation-risk"
+    },
+    {
+     "text": "Arnett, Thomas. \"Most Innovation Efforts Won’t Transform K-12 Education.\" EdNext, Spring 2024. https://www.educationnext.org/most-innovation-efforts-wont-transform-k-12-education/.",
+     "href": "https://www.educationnext.org/most-innovation-efforts-wont-transform-k-12-education/"
+    },
+    {
+     "text": "Aurora Institute. 2024 State Policy Priorities. Aurora Institute, 2024. https://aurora-institute.org/wp-content/uploads/2024-State-Policy-Priorities-v3.pdf.",
+     "href": "https://aurora-institute.org/wp-content/uploads/2024-State-Policy-Priorities-v3.pdf"
+    },
+    {
+     "text": "Bardach, Eugene. The Implementation Game: What Happens After a Bill Becomes a Law. Cambridge, MA: MIT Press, 1977.",
+     "href": null
+    },
+    {
+     "text": "Barshay, Jill. \"Proof Points: Only a Quarter of Federally Funded Education Innovations Benefited Students, Report Says.\" Hechinger Report, May 20, 2019. https://hechingerreport.org/proof-points-only-a-quarter-of-federally-funded-education-innovations-benefited-students-report-says/.",
+     "href": "https://hechingerreport.org/proof-points-only-a-quarter-of-federally-funded-education-innovations-benefited-students-report-says/"
+    },
+    {
+     "text": "Berner, Ashley Rogers. No One Way to School: Pluralism and American Public Education. New York: Palgrave Macmillan, 2017.",
+     "href": null
+    },
+    {
+     "text": "Berner, Ashley Rogers. Educational Pluralism and Democracy. New York: Palgrave Macmillan, 2024.",
+     "href": null
+    },
+    {
+     "text": "Commission on Evidence-Based Policymaking. The Promise of Evidence-Based Policymaking: Report of the Commission on Evidence-Based Policymaking. Washington, DC: Commission on Evidence-Based Policymaking, 2017.",
+     "href": null
+    },
+    {
+     "text": "CREDO. National Charter School Study III. Stanford, CA: Center for Research on Education Outcomes, 2023. https://credo.stanford.edu/reports/item/national-charter-school-study-iii/.",
+     "href": "https://credo.stanford.edu/reports/item/national-charter-school-study-iii/"
+    },
+    {
+     "text": "Darolia, Rajeev, and Colleen Heflin, eds. \"The Social and Community Consequences of the Opioid Epidemic.\" The Annals of the American Academy of Political and Social Science 703, no. 1 (2022): 7-14.",
+     "href": null
+    },
+    {
+     "text": "Donnelly, Claire, and Meghna Chakrabarti. \"Has the United States Lost Its 'Can-Do' Attitude?\" On Point. WBUR, March 29, 2024. https://www.wbur.org/onpoint/2024/03/29/united-states-lost-its-can-do-attitude-philip-howard.",
+     "href": "https://www.wbur.org/onpoint/2024/03/29/united-states-lost-its-can-do-attitude-philip-howard"
+    },
+    {
+     "text": "Education Elements. \"School Improvement and Redesign: Built on a Foundation of What Works. Schools Exit Improvement Status.\" https://www.edelements.com/lp-school-improvement-and-redesign.",
+     "href": "https://www.edelements.com/lp-school-improvement-and-redesign"
+    },
+    {
+     "text": "Elmore, Richard F. The Politics of Education Reform. Issues in Policy Analysis. London: Butterworths, 1978.",
+     "href": null
+    },
+    {
+     "text": "Figlio, David N., Cassandra M.D. Hart, and Krzysztof Karbownik. Competitive Effects of Charter Schools. EdWorkingPaper No. 24-908. Providence, RI: Annenberg Institute at Brown University, February 2024. https://edworkingpapers.com/sites/default/files/ai24-908.pdf.",
+     "href": "https://edworkingpapers.com/sites/default/files/ai24-908.pdf"
+    },
+    {
+     "text": "Fullan, Michael. The Challenge of School Change: A Collection of Articles. 2nd ed. Thousand Oaks, CA: Corwin Press, 2009.",
+     "href": null
+    },
+    {
+     "text": "Fullan, Michael. \"Large-Scale Reform Comes of Age.\" Journal of Educational Change 10, no. 4 (2009): 9-15. https://michaelfullan.ca/wp-content/uploads/2016/06/13396082070.pdf.",
+     "href": "https://michaelfullan.ca/wp-content/uploads/2016/06/13396082070.pdf"
+    },
+    {
+     "text": "Grant, Elizabeth. Deliberative Policymaking: The Role of Public Deliberation in Policy Decisions. Lanham, MD: Lexington Books, 2021.",
+     "href": null
+    },
+    {
+     "text": "Hess, Frederick M., and Michael Q. McShane. Getting Education Right: How Education Policy Shapes Our Future. New York: Teachers College Press, 2015.",
+     "href": null
+    },
+    {
+     "text": "Hoxby, Caroline. \"What Has Changed and What Has Not.\" In Our Schools and Our Future: Are We Still at Risk?, edited by Paul E. Peterson, 3-36. Stanford, CA: Hoover Institution Press, 2003.",
+     "href": null
+    },
+    {
+     "text": "Institute of Education Sciences. Evaluation of the Investing in Innovation (i3) Program: Outcomes for Grantees and Students, 2010-2016. Washington, DC: U.S. Department of Education, February 2024. https://ies.ed.gov/ncee/pubs/2024002/.",
+     "href": "https://ies.ed.gov/ncee/pubs/2024002/"
+    },
+    {
+     "text": "Jones, Fred A., Jr., and Alexis Chambers. Innovation Zones: Policy Flexibility to Reimagine and Modernize K-12 Education Post-COVID-19. Aurora Institute, June 2021. https://aurora-institute.org/wp-content/uploads/innovation-zones-policy-flexibility-to-reimagine-and-modernize-k12-education-post-covid-19.pdf.",
+     "href": "https://aurora-institute.org/wp-content/uploads/innovation-zones-policy-flexibility-to-reimagine-and-modernize-k12-education-post-covid-19.pdf"
+    },
+    {
+     "text": "Kamenetz, Anya. \"What 'A Nation at Risk' Got Wrong, and Right, About U.S. Schools.\" NPR, April 29, 2018. https://www.npr.org/sections/ed/2018/04/29/604986823/what-a-nation-at-risk-got-wrong-and-right-about-u-s-schools.",
+     "href": "https://www.npr.org/sections/ed/2018/04/29/604986823/what-a-nation-at-risk-got-wrong-and-right-about-u-s-schools"
+    },
+    {
+     "text": "Kingdon, John W. Agendas, Alternatives, and Public Policies. 2nd ed. New York: HarperCollins College Publishers, 1995.",
+     "href": null
+    },
+    {
+     "text": "Kretovics, Joseph. Transforming Urban Education. Boston: Allyn and Bacon, 1994.",
+     "href": null
+    },
+    {
+     "text": "Lewis, Karyn, and Megan Kuhfeld. Education’s Long COVID: 2022-23 Achievement Data Reveal Stalled Progress Toward Pandemic Recovery. Portland, OR: NWEA, July 2023. https://www.nwea.org/uploads/Educations-long-covid-2022-23-achievement-data-reveal-stalled-progress-toward-pandemic-recovery_NWEA_Research-brief.pdf.",
+     "href": "https://www.nwea.org/uploads/Educations-long-covid-2022-23-achievement-data-reveal-stalled-progress-toward-pandemic-recovery_NWEA_Research-brief.pdf"
+    },
+    {
+     "text": "Mass Insight Education and Research Institute. The Turnaround Challenge: Why America's Best Opportunity to Dramatically Improve Student Achievement Lies in Our Worst-Performing Schools. Boston: Mass Insight Education and Research Institute, 2007. https://www.massinsight.org/wp-content/uploads/2015/11/TheTurnaroundChallenge_MainReport.pdf.",
+     "href": "https://www.massinsight.org/wp-content/uploads/2015/11/TheTurnaroundChallenge_MainReport.pdf"
+    },
+    {
+     "text": "McAdams, Donald R. What School Boards Can Do: Reform Governance for Urban Schools. New York: Teachers College Press, 2006.",
+     "href": null
+    },
+    {
+     "text": "McKinsey & Company. \"Spark and Sustain: How All of the World’s School Systems Can Improve Learning at Scale.\" McKinsey & Company, February 12, 2024. https://www.mckinsey.com/industries/education/our-insights/spark-and-sustain-how-school-systems-can-improve-learning-at-scale?utm_medium=DSMN8&utm_source=LinkedIn&utm_user=14419233729912304#/.",
+     "href": "https://www.mckinsey.com/industries/education/our-insights/spark-and-sustain-how-school-systems-can-improve-learning-at-scale?utm_medium=DSMN8&utm_source=LinkedIn&utm_user=14419233729912304#/"
+    },
+    {
+     "text": "McLaughlin, Milbrey. Reforming Districts. Seattle, WA: Center for the Study of Teaching and Policy, University of Washington, 2005.",
+     "href": null
+    },
+    {
+     "text": "McLaughlin, Milbrey, David K. Cohen, and Joan E. Talbert. Teaching for Understanding: Challenges for Policy and Practice. San Francisco: Jossey-Bass, 1993.",
+     "href": null
+    },
+    {
+     "text": "Merrow, John. Addicted to Reform: A 12-Step Program to Rescue Public Education. New York: The New Press, 2017.",
+     "href": null
+    },
+    {
+     "text": "Modan, Naaz. \"NCES Survey: Most Schools Plan to Use State Tests to Track Academic Recovery.\" K-12 Dive, April 16, 2024. https://www.k12dive.com/news/nces-survey-academic-recovery-state-testing/713320/.",
+     "href": "https://www.k12dive.com/news/nces-survey-academic-recovery-state-testing/713320/"
+    },
+    {
+     "text": "O'Day, Jennifer. Building Capacity for Education Reform. Washington, D.C.: Consortium for Policy Research in Education, 1995.",
+     "href": null
+    },
+    {
+     "text": "OECD. OECD Competency Framework: Project 2030. https://www.oecd.org/en/about/directorates/directorate-for-education-and-skills.html2030-project.html.",
+     "href": "https://www.oecd.org/en/about/directorates/directorate-for-education-and-skills.html2030-project.html"
+    },
+    {
+     "text": "Peterson, Paul E. \"Nation's Charter Report Card: First-Ever State Ranking of Charter Student Performance on NAEP.\" Education Next, November 2023. https://www.educationnext.org/nations-charter-report-card-first-ever-state-ranking-charter-student-performance-naep/.",
+     "href": "https://www.educationnext.org/nations-charter-report-card-first-ever-state-ranking-charter-student-performance-naep/"
+    },
+    {
+     "text": "Peterson, Paul E. \"Toward Equitable School Choice.\" Hoover Institution, November 2020. https://www.hoover.org/research/toward-equitable-school-choice.",
+     "href": "https://www.hoover.org/research/toward-equitable-school-choice"
+    },
+    {
+     "text": "Polikoff, Morgan. \"40 Years Ago, ‘A Nation at Risk’ Flagged a ‘Rising Tide of Mediocrity’ in Schools.\" The 74, April 24, 2023. https://www.the74million.org/article/40-years-ago-a-nation-at-risk-flagged-a-rising-tide-of-mediocrity-in-schools/.",
+     "href": "https://www.the74million.org/article/40-years-ago-a-nation-at-risk-flagged-a-rising-tide-of-mediocrity-in-schools/"
+    },
+    {
+     "text": "Ravitch, Diane. The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education. New York, NY: Basic Books, 2010.",
+     "href": null
+    },
+    {
+     "text": "Richmond, Tom, and Eleanor Regan. 20 Years of Muddling Through: Why It Is Time to Set a New Course for the State School System in England. EDSK, January 2024. https://www.edsk.org/wp-content/uploads/2024/01/EDSK-20-years-of-muddling-through.pdf.",
+     "href": "https://www.edsk.org/wp-content/uploads/2024/01/EDSK-20-years-of-muddling-through.pdf"
+    },
+    {
+     "text": "Smarick, Andy. The State Education Agency: At the Helm, Not the Oar. Washington, DC: Thomas B. Fordham Institute, April 2014. https://fordhaminstitute.org/national/research/state-education-agency-helm-not-oar.",
+     "href": "https://fordhaminstitute.org/national/research/state-education-agency-helm-not-oar"
+    },
+    {
+     "text": "Spillane, James P. \"State and Local Government Relations in the Era of Standards-Based Reform: Standards, State Policy Instruments, and Local Instructional Policy Making.\" Educational Policy 13, no. 4 (September 1999): 546-572. Thousand Oaks, CA: Corwin Press, Inc.",
+     "href": null
+    },
+    {
+     "text": "The Economist. \"Charter Schools Do Things That All Democrats Say They Support.\" The Economist, February 1, 2024. https://www.economist.com/united-states/2024/02/01/charter-schools-do-things-that-all-democrats-say-they-support.",
+     "href": "https://www.economist.com/united-states/2024/02/01/charter-schools-do-things-that-all-democrats-say-they-support"
+    },
+    {
+     "text": "The 74. \"Nation at Risk Turns 35.\" Last modified April 2018. https://www.the74million.org/series/nation-at-risk-turns-35/.",
+     "href": "https://www.the74million.org/series/nation-at-risk-turns-35/"
+    },
+    {
+     "text": "U.S. Department of Education. A Nation at Risk: 25 Years Later. https://www2.ed.gov/rschstat/research/pubs/risk25.html.",
+     "href": "https://www2.ed.gov/rschstat/research/pubs/risk25.html"
+    },
+    {
+     "text": "Wang, Weijie, and Taek Kyu Kim. \"Do Government Performance Signals Affect Citizen Satisfaction?\" Journal of Policy Analysis and Management 43, no. 3 (Summer 2024). John Wiley & Sons.",
+     "href": null
+    }
+   ]
+  },
+  {
+   "title": "III. New Foundations: The Operating Essentials",
+   "cites": [
+    {
+     "text": "Howard, Philip K. Everyday Freedom: Designing the Framework for a Flourishing Society. New York: Rodin Books, 2023.",
+     "href": null
+    },
+    {
+     "text": "McDonnell, Lorraine M., and Richard F. Elmore. Alternative Policy Instruments. Consortium for Policy Research in Education, November 1987.",
+     "href": null
+    },
+    {
+     "text": "Osborne, David, and Ted Gaebler. Reinventing Government: How the Entrepreneurial Spirit Is Transforming the Public Sector. Reading, MA: Addison-Wesley Publishing Company, 1993.",
+     "href": null
+    },
+    {
+     "text": "Osborne, David. Laboratories of Democracy. Boston: Harvard Business School Press, 1988.",
+     "href": null
+    },
+    {
+     "text": "Poon, Jennifer, and Paul Leather. \"Road Signs from a New Path Forward.\" Leading with Learning. Center for Innovation in Education, April 2023. https://www.leadingwithlearning.org/post/road-signs-from-a-new-path-forward.",
+     "href": "https://www.leadingwithlearning.org/post/road-signs-from-a-new-path-forward"
+    }
+   ]
+  },
+  {
+   "title": "IV. A New System Design",
+   "cites": [
+    {
+     "text": "Anicich, Eric M., Michael Y. Lee, and Juan Pablo Sánchez Celi. \"The Challenges of Becoming a Less Hierarchical Company.\" Harvard Business Review, March 2024. https://hbr.org/2024/03/the-challenges-of-becoming-a-less-hierarchical-company.",
+     "href": "https://hbr.org/2024/03/the-challenges-of-becoming-a-less-hierarchical-company"
+    },
+    {
+     "text": "Barber, Michael. How to Run a Government: So that Citizens Benefit and Taxpayers Don't Go Crazy. London: Penguin Books, 2015.",
+     "href": null
+    },
+    {
+     "text": "Barber, Michael. Instruction to Deliver: Fighting to Transform Britain’s Public Services. London: Methuen Publishing, 2007.",
+     "href": null
+    },
+    {
+     "text": "Barber, Michael, et al. Deliverology 101: A Field Guide for Educational Leaders. Thousand Oaks, CA: SAGE Publications, 2010.",
+     "href": null
+    },
+    {
+     "text": "Coles, Sir Jon. Supporting Schools: How Government Can Do a Better Job. United Learning, June 2024. https://unitedlearning.org.uk/Portals/0/unitedthinking/Supporting-Schools.pdf.",
+     "href": "https://unitedlearning.org.uk/Portals/0/unitedthinking/Supporting-Schools.pdf"
+    },
+    {
+     "text": "DiPerna, Paul, and Colyn Ritter. \"Opinion: To Meet America’s Education Challenges, Our Country Needs State-Level Innovation.\" Miami Herald, May 8, 2024. https://www.miamiherald.com/opinion/article288415957.html.",
+     "href": "https://www.miamiherald.com/opinion/article288415957.html"
+    },
+    {
+     "text": "Grant, Elizabeth. Deliberative Policymaking. Cambridge, MA: Harvard Education Press, May 2024. https://hep.gse.harvard.edu/9781682538838/deliberative-policymaking/?fbclid=IwZXh0bgNhZW0CMTEAAR0pXzE80yMYEtH0b9-qN82ta8VVLzTs4-fTUn61SAKBpVySGkxNT6VCydQ_aem_AXwcTP3oeeqaglfSbS_l7wpDhBqVFEgmFN9BVR4qZFDDjynsbzWZiVN-B7Ly1NUi9JTG9DgiFlrK0VxkUZFeb4lB.",
+     "href": "https://hep.gse.harvard.edu/9781682538838/deliberative-policymaking/?fbclid=IwZXh0bgNhZW0CMTEAAR0pXzE80yMYEtH0b9-qN82ta8VVLzTs4-fTUn61SAKBpVySGkxNT6VCydQ_aem_AXwcTP3oeeqaglfSbS_l7wpDhBqVFEgmFN9BVR4qZFDDjynsbzWZiVN-B7Ly1NUi9JTG9DgiFlrK0VxkUZFeb4lB"
+    },
+    {
+     "text": "Kanter, Rosabeth Moss. \"Leadership and the Psychology of Turnarounds.\" Harvard Business Review 81, no. 6 (June 2003): 58–67.",
+     "href": null
+    },
+    {
+     "text": "Kanter, Rosabeth Moss. \"Transcending Business Boundaries: 12,000 World Managers View Change.\" Harvard Business Review 69, no. 3 (May-June 1991): 151–164.",
+     "href": null
+    },
+    {
+     "text": "Kanter, Rosabeth Moss. Think Outside the Building: How Advanced Leaders Can Change the World One Smart Innovation at a Time. New York: PublicAffairs, 2020.",
+     "href": null
+    },
+    {
+     "text": "Kolderie, Ted. The Split-Screen Strategy: Improvement + Innovation. Edina, MN: Beaver's Pond Press, 2015.",
+     "href": null
+    },
+    {
+     "text": "McCord, Patty. \"How Netflix Reinvented HR.\" Harvard Business Review, January 2014. https://hbr.org/2014/01/how-netflix-reinvented-hr.",
+     "href": "https://hbr.org/2014/01/how-netflix-reinvented-hr"
+    },
+    {
+     "text": "Simons, Robert. Levers of Control: How Managers Use Innovative Control Systems to Drive Strategic Renewal. Boston: Harvard Business School Press, 1994.",
+     "href": null
+    },
+    {
+     "text": "Tyack, David. Seeking Common Ground: Public Schools in a Diverse Society. Cambridge, MA: Harvard University Press, 2003.",
+     "href": null
+    }
+   ]
+  },
+  {
+   "title": "V. How to Build the New Operating System",
+   "cites": [
+    {
+     "text": "Aldis, Alli, and Colyn Ritter. \"New K-12 Teacher Survey Indicates Morale Crisis Among Educators.\" EdChoice and Morning Consult, May 7, 2024. https://www.edchoice.org/engage/new-k-12-teacher-survey-indicates-morale-crisis-among-educators/.",
+     "href": "https://www.edchoice.org/engage/new-k-12-teacher-survey-indicates-morale-crisis-among-educators/"
+    },
+    {
+     "text": "Arizona State University. \"Design Aspirations.\" New American University. https://newamericanuniversity.asu.edu/about/design-aspirations/.",
+     "href": "https://newamericanuniversity.asu.edu/about/design-aspirations/"
+    },
+    {
+     "text": "Atwood, Jason. \"How an Expanded Definition of Student Success Drives Learning: 3 New Insights from the NewSchools Portfolio.\" NewSchools Venture Fund Blog, May 7, 2024. NewSchools Venture Fund. https://www.newschools.org/blog/how-an-expanded-definition-of-student-success-drives-learning-3-new-insights-from-the-newschools-portfolio/.",
+     "href": "https://www.newschools.org/blog/how-an-expanded-definition-of-student-success-drives-learning-3-new-insights-from-the-newschools-portfolio/"
+    },
+    {
+     "text": "Barber, Michael. Accomplishment: How Ambitious and Challenging Things Get Done. London: Penguin Books, 2021.",
+     "href": null
+    },
+    {
+     "text": "Battelle for Kids. Portrait of a Graduate: Do You Have a 21st Century, Deeper Learning Vision for Every Student? https://www.battelleforkids.org/how-we-help/portrait-of-a-graduate.",
+     "href": "https://www.battelleforkids.org/how-we-help/portrait-of-a-graduate"
+    },
+    {
+     "text": "Bosworth, Michael (Boz). \"Incentives and the Cobra Effect.\" Boz. January 10, 2024. https://boz.com/articles/incentives?ref=refind.",
+     "href": "https://boz.com/articles/incentives?ref=refind"
+    },
+    {
+     "text": "Bryk, Anthony S., and Barbara Schneider. Trust in Schools: A Core Resource for Improvement. New York: Russell Sage Foundation, 2002.",
+     "href": null
+    },
+    {
+     "text": "Bryk, Anthony S., et al. Organizing Schools for Improvement: Lessons from Chicago. Chicago: University of Chicago Press, 2010.",
+     "href": null
+    },
+    {
+     "text": "Cohen, Justin. Change Agents: Transforming Schools from the Ground Up. Cambridge, MA: Harvard Education Press, 2020.",
+     "href": null
+    },
+    {
+     "text": "Cohen Kabaker, Jennifer, and Laurie Gagnon. \"ExcEL Leadership Academy Micro-credential Pathway Adoption in Rhode Island.\" Aurora Institute. https://aurora-institute.org/resource/excel-leadership-academy-micro-credential-pathway-adoption-in-rhode-island/.",
+     "href": "https://aurora-institute.org/resource/excel-leadership-academy-micro-credential-pathway-adoption-in-rhode-island/"
+    },
+    {
+     "text": "Collaborative for Academic, Social, and Emotional Learning (CASEL). Portraits of a Graduate: Strengthening Career and College Readiness Through Social and Emotional Skill Development. February 2, 2024. https://casel.org/portraits-of-a-graduate-2024/?view=true&utm_campaign=XQ%20XTRA%20Newsletter&utm_medium=email&_hsenc=p2ANqtz-_r94O5ECUsQiwYgQQ0qhut9MYZ9hQjOwoPGMArZfSraZhrHJDj_DieYx-960JQS5lBs34Jxey_dZA97Ac6Cj_E73mqKQ&_hsmi=317597951&utm_content=317597951&utm_source=hs_email.",
+     "href": "https://casel.org/portraits-of-a-graduate-2024/?view=true&utm_campaign=XQ%20XTRA%20Newsletter&utm_medium=email&_hsenc=p2ANqtz-_r94O5ECUsQiwYgQQ0qhut9MYZ9hQjOwoPGMArZfSraZhrHJDj_DieYx-960JQS5lBs34Jxey_dZA97Ac6Cj_E73mqKQ&_hsmi=317597951&utm_content=317597951&utm_source=hs_email"
+    },
+    {
+     "text": "Crescendo Education Group. Can We Trust the Transcript? White Paper. August 2024. https://crescendoedgroup.org/wp-content/uploads/2024/08/White-Paper-Can-We-Trust-The-Transcript.pdf.",
+     "href": "https://crescendoedgroup.org/wp-content/uploads/2024/08/White-Paper-Can-We-Trust-The-Transcript.pdf"
+    },
+    {
+     "text": "DeRoche, Tim. \"Available to All: How Districts Don’t Enroll All Students, Funneling Students into Certain Enrollment Patterns.\" The 74 Million, June 19, 2024. https://www.the74million.org/article/728661/.",
+     "href": "https://www.the74million.org/article/728661/"
+    },
+    {
+     "text": "Dix, Paul. When the Adults Change, Everything Changes: Seismic Shifts in School Behaviour. Bancyfelin, Carmarthen: Independent Thinking Press, 2017.",
+     "href": null
+    },
+    {
+     "text": "Educators for Excellence (E4E). Voices from the Classroom: 2023 Survey. https://e4e.org/what-we-do/a-survey-of-americas-educators/voices-from-the-classroom-2023-a-survey-of-americas-educators/.",
+     "href": "https://e4e.org/what-we-do/a-survey-of-americas-educators/voices-from-the-classroom-2023-a-survey-of-americas-educators/"
+    },
+    {
+     "text": "EdWeek Research Center and Merrimack College. The Merrimack College Teacher Survey 2023: American K-12 Teachers Feel Overworked and Dissatisfied in Their Jobs and Are Struggling with Diminished Mental Health and Wellness Support. 2023. https://www.merrimack.edu/academics/education-and-social-policy/about/merrimack-college-teacher-survey/.",
+     "href": "https://www.merrimack.edu/academics/education-and-social-policy/about/merrimack-college-teacher-survey/"
+    },
+    {
+     "text": "Elmore, Richard F. Restructuring in the Classroom: Teaching, Learning, and School Organization. San Francisco: Jossey-Bass Publishers, 1996.",
+     "href": null
+    },
+    {
+     "text": "Fullan, Michael. The Change Leader: A Personal Journey of Leadership Development. San Francisco: Jossey-Bass, 2011.",
+     "href": null
+    },
+    {
+     "text": "Gallagher, Mary Jean, John Malloy, and Rachel Ryerson. \"Achieving Excellence: Bringing Effective Literacy Pedagogy to Scale in Ontario’s Publicly-Funded Education System.\" Educational Change 17, no. 4 (2016): 477–504. https://doi.org/10.1007/s10833-016-9284-6.",
+     "href": "https://doi.org/10.1007/s10833-016-9284-6"
+    },
+    {
+     "text": "Hawkins, Beth. \"Poll Data and the Purple Classroom: An Interview with USC’s Morgan Polikoff.\" Interview by The 74. The 74 Million, April 1, 2024. https://www.the74million.org/article/74-interview-uscs-morgan-polikoff-on-new-poll-data-the-purple-classroom/?utm_source=The%2074%20Million%20Newsletter&utm_campaign=2f9b902987-EMAIL_CAMPAIGN_2022_07_27_07_47_COPY_01&utm_medium=email&utm_term=0_077b986842-2f9b902987-177090992.",
+     "href": "https://www.the74million.org/article/74-interview-uscs-morgan-polikoff-on-new-poll-data-the-purple-classroom/?utm_source=The%2074%20Million%20Newsletter&utm_campaign=2f9b902987-EMAIL_CAMPAIGN_2022_07_27_07_47_COPY_01&utm_medium=email&utm_term=0_077b986842-2f9b902987-177090992"
+    },
+    {
+     "text": "Helliwell, John F., Richard Layard, Jeffrey D. Sachs, and Jan-Emmanuel De Neve, eds. World Happiness Report 2024. New York: Sustainable Development Solutions Network, 2024. https://worldhappiness.report/ed/2024/.",
+     "href": "https://worldhappiness.report/ed/2024/"
+    },
+    {
+     "text": "Hill, Paul T. Fixing Urban Schools. Washington, DC: Brookings Institution Press, 1998.",
+     "href": null
+    },
+    {
+     "text": "Hill, Paul T., Christopher T. Cross, and Sally Kilgore. \"The Federal Role in Education.\" Brookings Papers on Education Policy, no. 3 (2000): 11-57. https://www.jstor.org/stable/20067219.",
+     "href": "https://www.jstor.org/stable/20067219"
+    },
+    {
+     "text": "Hirsch, E.D., Jr. How to Educate a Citizen: The Power of Shared Knowledge to Unify a Nation. New York: Harper, 2020.",
+     "href": null
+    },
+    {
+     "text": "Howard, Philip K. Not Accountable: Rethinking the Constitutionality of Public Employee Unions. New York: Rodin Books, 2023.",
+     "href": null
+    },
+    {
+     "text": "Hurst, Kiley. \"About 1 in 4 U.S. Teachers Say Their School Went into a Gun-Related Lockdown in the Last School Year.\" Pew Research Center, April 11, 2024. https://www.pewresearch.org/short-reads/2024/04/11/about-1-in-4-us-teachers-say-their-school-went-into-a-gun-related-lockdown-in-the-last-school-year/.",
+     "href": "https://www.pewresearch.org/short-reads/2024/04/11/about-1-in-4-us-teachers-say-their-school-went-into-a-gun-related-lockdown-in-the-last-school-year/"
+    },
+    {
+     "text": "Kalenze, Eric. Education Is Upside-Down: Reframing Reform to Focus on the Right Problems. Lanham, MD: Rowman & Littlefield Education, 2014.",
+     "href": null
+    },
+    {
+     "text": "Kiechel, Walter. The Lords of Strategy: The Secret Intellectual History of the New Corporate World. Boston: Harvard Business Review Press, 2010.",
+     "href": null
+    },
+    {
+     "text": "Kimmelman, Michael. \"What Made New York Great? Leadership. Where Is It Now?\" New York Times, June 9, 2024. https://www.nytimes.com/2024/06/09/arts/nyc-hochul-congestion-pricing.html?smid=nytcore-ios-share.",
+     "href": "https://www.nytimes.com/2024/06/09/arts/nyc-hochul-congestion-pricing.html?smid=nytcore-ios-share"
+    },
+    {
+     "text": "Knight, Katie. \"It’s Time to Make Working in Schools One of the Most Desirable Career Paths.\" The 74 Million, May 8, 2024. https://www.the74million.org/article/its-time-to-make-working-in-schools-one-of-the-most-desirable-career-paths/.",
+     "href": "https://www.the74million.org/article/its-time-to-make-working-in-schools-one-of-the-most-desirable-career-paths/"
+    },
+    {
+     "text": "Kraft, Matthew A., and Melissa Arnold Lyon. The Rise and Fall of the Teaching Profession: Prestige, Interest, Preparation, and Satisfaction over the Last Half Century. EdWorkingPaper: 22-679. Providence, RI: Annenberg Institute at Brown University, 2024. https://doi.org/10.26300/7b1a-vk92.",
+     "href": "https://doi.org/10.26300/7b1a-vk92"
+    },
+    {
+     "text": "Lin, Luona, Kim Parker, and Juliana Menasce Horowitz. \"What’s It Like to Be a Teacher Today? Survey: Challenges Students Are Facing.\" Pew Research Center, April 4, 2024. https://www.pewresearch.org/social-trends/2024/04/04/problems-students-are-facing-at-public-k-12-schools/.",
+     "href": "https://www.pewresearch.org/social-trends/2024/04/04/problems-students-are-facing-at-public-k-12-schools/"
+    },
+    {
+     "text": "Loveless, Tom, Helen F. Ladd, and Cecilia Rouse. \"The Use and Misuse of Research in Educational Reform.\" Brookings Papers on Education Policy, no. 1 (1998): 279–317. http://www.jstor.org/stable/20067199.",
+     "href": "http://www.jstor.org/stable/20067199"
+    },
+    {
+     "text": "Lundgren, Patricia Levesque. \"Policies to Support and Elevate the Profession: Supply and Demand, Certification.\" ExcelinEd, May 6, 2024. https://excelined.org/2024/05/06/teacher-appreciation-week-policies-to-support-and-elevate-the-profession/.",
+     "href": "https://excelined.org/2024/05/06/teacher-appreciation-week-policies-to-support-and-elevate-the-profession/"
+    },
+    {
+     "text": "Meier, Deborah. In Schools We Trust: Creating Communities of Learning in an Era of Testing and Standardization. Boston: Beacon Press, 2002.",
+     "href": null
+    },
+    {
+     "text": "Moore, Rob. Education and Society: Issues and Explanations in the Sociology of Education. Cambridge: Polity, 2004.",
+     "href": null
+    },
+    {
+     "text": "National Research Council of the National Academies. Incentives and Test-Based Accountability in Education. Washington, DC: The National Academies Press, 2011.",
+     "href": null
+    },
+    {
+     "text": "New Classrooms. \"Letter in Support of the Developing and Advancing Innovative Learning Models Act.\" New Classrooms, May 9, 2024. https://newclassrooms.org/2024/05/09/letter-in-support-of-the-developing-and-advancing-innovative-learning-models-act/.",
+     "href": "https://newclassrooms.org/2024/05/09/letter-in-support-of-the-developing-and-advancing-innovative-learning-models-act/"
+    },
+    {
+     "text": "Osborne, David, and Ted Gaebler. Reinventing Government: How the Entrepreneurial Spirit Is Transforming the Public Sector. Reading, MA: Addison-Wesley Publishing Company, 1992.",
+     "href": null
+    },
+    {
+     "text": "Poon, Jenny, and Phil Leather. Road Signs from a New Path Forward: Lessons from Leaders Shaping Education Systems with the People They Serve. Center for Innovation in Education, April 2023.",
+     "href": null
+    },
+    {
+     "text": "Sarason, Seymour. Revisiting the Culture of School and The Problem of Change. New York: Teachers College Press, 1996.",
+     "href": null
+    },
+    {
+     "text": "Stafford-Brizard, Brooke. Building Blocks for Learning - Turnaround for Children. Turnaround for Children, 2016. https://turnaroundusa.org/wp-content/uploads/2016/03/Turnaround-for-Children-Building-Blocks-for-Learningx-2.pdf.",
+     "href": "https://turnaroundusa.org/wp-content/uploads/2016/03/Turnaround-for-Children-Building-Blocks-for-Learningx-2.pdf"
+    },
+    {
+     "text": "Tang, Yaru, Mengdi Liu, Fan Xia, and Bing Zhang. \"Informal Regulation by Nongovernmental Organizations Enhances Corporate Compliance: Evidence from a Nationwide Randomized Controlled Trial in China.\" Journal of Policy Analysis and Management 43, no. 1 (Winter 2024). John Wiley & Sons.",
+     "href": null
+    },
+    {
+     "text": "Tichy, Noel M., and Warren G. Bennis. Judgment: How Winning Leaders Make Great Calls. New York: Portfolio, 2007.",
+     "href": null
+    },
+    {
+     "text": "VELA. Measuring What Matters: How Founders of Unconventional Models Define and Measure Learner Outcomes. 2024. https://www.vela.org.",
+     "href": "https://www.vela.org"
+    },
+    {
+     "text": "Warshawsky, Mark. The Risks from State and Local Government Pension Plans. Washington, D.C.: American Enterprise Institute, June 2024. https://www.aei.org/wp-content/uploads/2024/06/Warshawsky-Risks-from-State-and-Local-Government-Employee-Pension-Plans-WP.pdf?x85095.",
+     "href": "https://www.aei.org/wp-content/uploads/2024/06/Warshawsky-Risks-from-State-and-Local-Government-Employee-Pension-Plans-WP.pdf?x85095"
+    },
+    {
+     "text": "Weisgrau, Josh, et al. \"Six Attributes for Portrait of a Powerful Graduate.\" Digital Promise, August 21, 2023. https://digitalpromise.org/2023/08/21/six-attributes-for-portrait-of-a-powerful-graduate/.",
+     "href": "https://digitalpromise.org/2023/08/21/six-attributes-for-portrait-of-a-powerful-graduate/"
+    },
+    {
+     "text": "Whitman, David. Sweating the Small Stuff: Inner City Schools and the New Paternalism. Washington, DC: Thomas B. Fordham Institute Press, 2008.",
+     "href": null
+    },
+    {
+     "text": "Whyte, William H., Jr. The Organization Man. New York: Simon & Schuster, 1957.",
+     "href": null
+    },
+    {
+     "text": "Wise, Bob, and Javaid Siddiqi. \"Forget Hot-Button Ed Issues: Voters Want Safe Schools and Kids Who Can Read.\" The 74 Million, July 30, 2024. https://www.the74million.org/article/forget-hot-button-ed-issues-voters-want-safe-schools-and-kids-who-can-read/.",
+     "href": "https://www.the74million.org/article/forget-hot-button-ed-issues-voters-want-safe-schools-and-kids-who-can-read/"
+    },
+    {
+     "text": "Zavadsky, Heather. School Turnarounds: The Essential Role of Districts. Cambridge, MA: Harvard Education Press, 2012.",
+     "href": null
+    },
+    {
+     "text": "Zimpher, Nancy, and Jason Lane. \"Governing and Hiring for Systemness: Revenue, Resources, Planning and Collaboration.\" Trusteeship Magazine, November/December 2023.",
+     "href": null
+    }
+   ]
+  },
+  {
+   "title": "VI. The System in Motion: How the Parts Fit Together",
+   "cites": [
+    {
+     "text": "Crabill, A.J. Great on Their Behalf: Why School Boards Fail, How Yours Can Become Effective. Bloomington, IN: Solution Tree Press, 2023.",
+     "href": null
+    },
+    {
+     "text": "Elgart, Mark. \"Building a New Accountability System for Truly Student-Centered Education.\" The 74 Million, April 2, 2024. https://www.the74million.org/article/building-a-new-accountability-system-for-truly-student-centered-education/",
+     "href": "https://www.the74million.org/article/building-a-new-accountability-system-for-truly-student-centered-education/"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Meet the Team | Hoover Education Success Initiative</title>
+<meta name="description" content="The people behind HESI's work on transformation.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0e172e;color:#e6eaf2;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#fff}
+</style>
+</helmet>
+<div data-screen-label="Meet the Team" style="font-family:Inter, sans-serif; background:#0e172e; color:#e6eaf2;">
+  <dc-import name="HesiHeader" active="none" hint-size="100%,76px"></dc-import>
+  <main id="main">
+    <section style="position:relative; min-height:300px; background:linear-gradient(90deg, rgba(4,26,80,0.95) 0%, rgba(5,32,98,0.85) 38%, rgba(5,32,98,0.2) 70%, rgba(5,32,98,0) 100%), url(assets/circuit-sub.svg) center / cover no-repeat, linear-gradient(160deg, #04184d 0%, #052062 50%, #0a3cb0 100%); color:#fff; padding:clamp(48px,5.8vw,84px) clamp(20px,6.7vw,96px) 56px; box-sizing:border-box;">
+      <div style="max-width:900px;">
+        <div style="font:500 13px Inter, sans-serif; color:#9fb0d3;"><a href="home.dc.html" style="color:#9fb0d3;" style-hover="color:#fff">Home</a> › Meet the Team</div>
+        <h1 style="font-family:Lora, serif; font-weight:500; font-size:clamp(40px,3.9vw,56px); line-height:1.08; letter-spacing:-0.01em; margin:18px 0 14px;">Meet the Team</h1>
+        <p style="margin:0; font:400 18px/1.6 Inter, sans-serif; color:#d3d9e6; max-width:640px;">The people behind HESI’s work on transformation.</p>
+      </div>
+    </section>
+
+    <section style="padding:72px clamp(20px,6.7vw,96px) 40px; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%,440px),1fr)); gap:28px; box-sizing:border-box;">
+      <sc-for list="{{ people }}" as="p" hint-placeholder-count="4">
+        <div style="background:#101e45; border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 30px;">
+          <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px;">
+            <div style="width:132px; height:132px; border-radius:50%; background:linear-gradient(145deg, #1c3a86, #0b1f55); border:3px solid #e0a46a; display:grid; place-items:center; font:500 40px Lora, serif; color:#fff; box-sizing:border-box;">{{ p.initials }}</div>
+            <span style="width:132px; text-align:center; font:600 9px Inter, sans-serif; letter-spacing:0.14em; color:#6f82ad;">HEADSHOT</span>
+          </div>
+          <h3 style="font:500 26px/1.2 Lora, serif; color:#fff; margin:22px 0 6px;">{{ p.name }}</h3>
+          <div style="font:600 12px Inter, sans-serif; letter-spacing:0.12em; text-transform:uppercase; color:#e0a46a; line-height:1.6;">{{ p.role }}<sc-if value="{{ p.role2 }}" hint-placeholder-val="{{ false }}"><br>{{ p.role2 }}</sc-if></div>
+          <p style="margin:16px 0 0; font:400 15px/1.7 Inter, sans-serif; color:#c3cbda; text-wrap:pretty;">{{ p.bio }}</p>
+          <a href="{{ p.mail }}" style="display:inline-block; margin-top:18px; font:600 13px Inter, sans-serif; color:#fff; border-bottom:1px solid #e0a46a; padding-bottom:2px;" style-hover="color:#e0a46a">Email {{ p.first }} →</a>
+        </div>
+      </sc-for>
+    </section>
+
+    <section style="margin:40px clamp(20px,6.7vw,96px) clamp(56px,6.7vw,96px); background:linear-gradient(135deg, #052062, #0a3cb0); border:1px solid rgba(90,150,255,0.35); border-radius:12px; color:#fff; padding:clamp(32px,3.9vw,56px) clamp(24px,4.4vw,64px); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:24px 40px;">
+      <div style="flex:1 1 420px;">
+        <h3 style="margin:0; font:500 clamp(26px,2.2vw,32px)/1.25 Lora, serif;">Want to work with us?</h3>
+        <p style="margin:12px 0 0; font:400 16px/1.6 Inter, sans-serif; color:#c9d1e0; max-width:620px;">We partner with state agencies, districts and organizations ready to transform how the system works.</p>
+      </div>
+      <a href="contact.dc.html" style="display:inline-flex; align-items:center; gap:10px; font:600 14px Inter, sans-serif; padding:13px 24px; border-radius:999px; background:#c27a3e; border:1px solid #e0a46a; color:#fff; white-space:nowrap;" style-hover="background:#cf8749; color:#fff">Contact us →</a>
+    </section>
+  </main>
+  <dc-import name="HesiFooter" hint-size="100%,80px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      people: [
+        { initials: 'MR', name: 'Margaret “Macke” Raymond', first: 'Macke', role: 'Program Director', mail: 'mailto:', bio: "Macke Raymond leads Hoover's education work, including the Education Futures Council's Ours to Solve, Once and for All and SEA Change. She is the founding director of CREDO, the Center for Research on Education Outcomes at Stanford, where her research has focused on school performance, charter school effectiveness, and building reliable evidence about what works." },
+        { initials: 'SB', name: 'Stephen Bowen', first: 'Stephen', role: 'Executive Director', role2: 'Hoover Education Success Initiative', mail: 'mailto:', bio: "Steve Bowen leads HESI's work to take research into practice with state leaders. Before joining Hoover in 2022, he was deputy executive director for state leadership at the Council of Chief State School Officers (CCSSO) and served as Maine's Commissioner of Education. He began his career as a middle and high school social studies teacher in Virginia and Maine, and served in the Maine House of Representatives." },
+        { initials: 'CF', name: 'Claire Fisher Moffett', first: 'Claire', role: '[Title]', mail: 'mailto:', bio: 'Claire Fisher Moffett works at the intersection of education, technology and workforce systems, helping organizations turn ambitious ideas about learning and opportunity into practical implementation. She builds and scales initiatives that expand career pathways and improve student outcomes, drawing on experience in strategy, operations and product development, with a particular interest in how AI can strengthen education systems.' },
+        { initials: 'MC', name: 'Meg Cotter Mazzola', first: 'Meg', role: 'Assistant Director of Strategic Initiatives', mail: 'mailto:mcotter@stanford.edu', bio: "Meg Cotter Mazzola has spent two decades helping organizations turn research into action. She leads external relations and strategic communications for SEA Change, the Education Futures Council, as well as Hoover’s education scholars. Previously, she spent a decade as communications director at CREDO at Stanford, leading media strategy for more than 50 studies, including the National Charter School Study." },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Contact Us | Hoover Education Success Initiative</title>
+<meta name="description" content="Contact the Hoover Education Success Initiative.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0e172e;color:#e6eaf2;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid #e0a46a;outline-offset:1px}
+</style>
+</helmet>
+<div data-screen-label="Contact Us" style="font-family:Inter, sans-serif; background:#0e172e; color:#e6eaf2;">
+  <dc-import name="HesiHeader" active="none" hint-size="100%,76px"></dc-import>
+  <main id="main">
+    <section style="position:relative; min-height:300px; background:linear-gradient(90deg, rgba(4,26,80,0.95) 0%, rgba(5,32,98,0.85) 38%, rgba(5,32,98,0.2) 70%, rgba(5,32,98,0) 100%), url(assets/circuit-sub.svg) center / cover no-repeat, linear-gradient(160deg, #04184d 0%, #052062 50%, #0a3cb0 100%); color:#fff; padding:clamp(48px,5.8vw,84px) clamp(20px,6.7vw,96px) 56px; box-sizing:border-box;">
+      <div style="max-width:900px;">
+        <div style="font:500 13px Inter, sans-serif; color:#9fb0d3;"><a href="home.dc.html" style="color:#9fb0d3;" style-hover="color:#fff">Home</a> › Contact Us</div>
+        <h1 style="font-family:Lora, serif; font-weight:500; font-size:clamp(40px,3.9vw,56px); line-height:1.08; letter-spacing:-0.01em; margin:18px 0 14px;">Contact Us</h1>
+        <p style="margin:0; font:400 18px/1.6 Inter, sans-serif; color:#d3d9e6; max-width:640px; text-wrap:pretty;">Questions about the work, partnership inquiries or media requests. We'd like to hear from you.</p>
+      </div>
+    </section>
+
+    <section style="padding:72px clamp(20px,6.7vw,96px) 96px; display:grid; grid-template-columns:minmax(0,820px); justify-content:center; box-sizing:border-box;">
+      <form action="#" method="post" style="background:#101e45; border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:clamp(24px,2.8vw,40px); display:flex; flex-direction:column; gap:18px;">
+        <h2 style="font:500 30px Lora, serif; color:#fff; margin:0 0 6px;">Send us a message</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%,260px),1fr)); gap:18px;">
+          <div><label for="name" style="display:block; font:600 12px Inter, sans-serif; letter-spacing:0.08em; text-transform:uppercase; color:#9fb0d3; margin-bottom:8px;">Name</label><input id="name" name="name" autocomplete="name" required="" style="width:100%; height:46px; border-radius:8px; background:#0b1739; border:1px solid rgba(143,184,255,0.3); color:#fff; font:400 15px Inter, sans-serif; padding:0 14px; box-sizing:border-box;"></div>
+          <div><label for="email" style="display:block; font:600 12px Inter, sans-serif; letter-spacing:0.08em; text-transform:uppercase; color:#9fb0d3; margin-bottom:8px;">Email</label><input id="email" name="email" type="email" autocomplete="email" required="" style="width:100%; height:46px; border-radius:8px; background:#0b1739; border:1px solid rgba(143,184,255,0.3); color:#fff; font:400 15px Inter, sans-serif; padding:0 14px; box-sizing:border-box;"></div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%,260px),1fr)); gap:18px;">
+          <div><label for="org" style="display:block; font:600 12px Inter, sans-serif; letter-spacing:0.08em; text-transform:uppercase; color:#9fb0d3; margin-bottom:8px;">Organization</label><input id="org" name="organization" autocomplete="organization" style="width:100%; height:46px; border-radius:8px; background:#0b1739; border:1px solid rgba(143,184,255,0.3); color:#fff; font:400 15px Inter, sans-serif; padding:0 14px; box-sizing:border-box;"></div>
+          <div><label for="topic" style="display:block; font:600 12px Inter, sans-serif; letter-spacing:0.08em; text-transform:uppercase; color:#9fb0d3; margin-bottom:8px;">I'm reaching out about</label><select id="topic" name="topic" style="width:100%; height:46px; border-radius:8px; background:#0b1739; border:1px solid rgba(143,184,255,0.3); color:#fff; font:400 15px Inter, sans-serif; padding:0 14px; box-sizing:border-box;">
+            <option value="">Select one</option>
+            <option>SEA Change for my state agency</option>
+            <option>Partnership or funding</option>
+            <option>Media inquiry</option>
+            <option>Something else</option>
+          </select></div>
+        </div>
+        <div><label for="msg" style="display:block; font:600 12px Inter, sans-serif; letter-spacing:0.08em; text-transform:uppercase; color:#9fb0d3; margin-bottom:8px;">Message</label><textarea id="msg" name="message" required="" style="width:100%; height:130px; border-radius:8px; background:#0b1739; border:1px solid rgba(143,184,255,0.3); color:#fff; font:400 15px Inter, sans-serif; padding:12px 14px; box-sizing:border-box; resize:vertical;"></textarea></div>
+        <div><button type="submit" style="display:inline-flex; align-items:center; gap:10px; font:600 14px Inter, sans-serif; padding:13px 24px; border-radius:999px; background:#c27a3e; border:1px solid #e0a46a; color:#fff; cursor:pointer;" style-hover="background:#cf8749">Send message →</button></div>
+      </form>
+    </section>
+  </main>
+  <dc-import name="HesiFooter" hint-size="100%,80px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>
